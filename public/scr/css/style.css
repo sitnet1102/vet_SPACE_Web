@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+    color:#000;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    box-sizing: border-box;
+}
+
+.fn-font {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    text-align: right;
+}
+
+.container {
+    width:1400px;
+    margin:0 auto;
+}
+header, section, nav, aside, #title {
+    border-bottom: 1px solid rgb(0, 83, 42);
+    border-top: 1px solid rgb(0, 83, 42);
+}
+header {
+    height:40px;
+    background-color:rgb(0, 83, 42);
+    justify-content: center;
+    align-content: center;
+}
+
+#item, #divor {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 25%;
+    float: right;
+}
+
+#item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+section {
+    height: 80px;
+    background-color:white;
+    display: flex;
+    align-items:flex-start;
+}
+nav {
+    float: left;
+    height: 848px;
+    width: 190px;
+    background-color: rgb(177, 179, 180);
+}
+section ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section ul li  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+section ul li img {
+    margin: 10px;
+}
+#item2 {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 24px;
+}
+aside {
+    float: left;
+    background-color:white;
+    width:1210px;
+    height: 848px;
+}
+
+#logout {
+    color: white;
+    background-color: rgb(0, 83, 42);
+}
+#title {
+    width: 100%;
+    height: 60px;
+    background-color:rgb(236,235,227);
+    display: flex;
+    align-items: center;
+}
+#title_Text {
+    font-size: 28px;
+    margin-left: 20px;
+}
