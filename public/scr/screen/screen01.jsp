@@ -10,239 +10,118 @@
     
     <style>
         @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou');
-        * {
-            margin:0;
-            padding:0;
-            color:#000;
-            font-family: 'ZCOOL QingKe HuangYou', cursive;
-            box-sizing: border-box;
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-family:sans-serif;
         }
 
-        .fn-font {
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        a {
-            outline: none;
-        }
-
-        .container {
-            width:1400px;
-            margin:0 auto;
-        }
-        header, section, nav, aside, #title {
-            border-bottom: 1px solid rgb(0, 83, 42);
-            border-top: 1px solid rgb(0, 83, 42);
-        }
-        header {
-            height:40px;
-            background-color:rgb(0, 83, 42);
-            justify-content: center;
-            align-content: center;
-        }
-
-        #item, #divor {
-            text-align: center;
-            color: white;
-            position: relative;
-            top: 25%;
-            float: right;
-        }
-
-        #item {
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        section {
-            height: 80px;
-            background-color:white;
-            display: flex;
-            align-items:flex-start;
-        }
-        nav {
-            float: left;
-            height: 848px;
-            width: 190px;
-            background-color: rgb(110, 120, 139);
-        }
-        #nav_title {
-            text-align: center;
-            width: 100%;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-        #nav_title_Text {
-            font-size: 18px;
-            margin-left: 20px;
-            color: white;
-        }
-        #blank_box {
-            height: 10px;
-            width: 100%;
-        }
-        section ul {
-            width: 100%;
-            height: 100%;
-            display: flex;
-        }
-        section ul li  {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-        section ul li img {
-            margin: 10px;
-        }
-        #item2 {
-            margin-top: 5px;
-            margin-left: 30px;
-            font-size: 28px;
-        }
-        #section_blank {
-            width: 280px;
-            height: 100%;
-        }
-        aside {
-            float: left;
-            background-color:white;
-            width:1210px;
-            height: 848px;
-        }
-
-        #logout {
-            color: white;
+        body {
             background-color: rgb(0, 83, 42);
         }
-        #title {
-            width: 100%;
-            height: 60px;
-            background-color:rgb(236,235,227);
-            display: flex;
-            align-items: center;
-        }
-        #title_Text {
-            font-size: 28px;
-            margin-left: 20px;
-        }
 
-        #div_01, #div_02, #div_03 {
-            width: 100%;
-            height: 100%;
-        }
-
-        #content_00, #content_01, #content_02, #content_03, #content_04 {
-            width: 100%;
-            height: 718px;
-        }
-        #select_box {
-            margin-left: 1%;
-            width: 98%;
-            height: 60px;
-            border-bottom: 1px solid rgb(0, 83, 42);
-        }
-        #selected_box_title{
-            float: left;
-            margin-left: 20px;
-            position: relative;
-            top: 35%;
-            font-size: 16px;
-        }
-        #selected_box_title input, #selected_box_title select {
-            width: 160px;
-            height: 24px;
-            font-size: 16px;
-        }
-        #selected_box_title2{
-            float: right;
-            margin-left: 20px;
-            position: relative;
-            top: 35%;
-            width: 8%;
-        }
-        #selected_box_title2 button {
-            width: 80px;
-            height: 24px;
-            font-size: 16px;
-        }
-        #table {
-            width: 1200px;
-            height: 708px;
-            margin: 10px;
-            border: 2px solid rgb(0, 83, 42);
-            font-size: 12px;
-            overflow-x:scroll;
-            overflow-y:scroll;
-        }
-        #table_01 {
-            border-top: none;
-            border-bottom: 1px solid rgb(0, 83, 42);
-            border-right: none;
-            border-left: none;
-            border-collapse: separate;
-            border-spacing: 1px;
+        h1 {
             text-align: center;
-            line-height: 1.5;
+            margin: 10px;
+            color: white;
         }
-        #table_01 th {
-            width: 200px;
-            height: 20px;
-            border-bottom: 1px solid rgb(0, 83, 42);
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+
+        #blank {
+            width: 40px;
+            height:160px;
+        }
+
+        .loginForm {
+            position:absolute;
+            width:300px;
+            height:350px;
+            padding: 30px, 20px;
+            background-color:#FFFFFF;
+            text-align:center;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+        }
+
+
+        .loginForm h2{
+            text-align: center;
+            margin: 30px;
+            color:  black;
+        }
+
+        .idForm{
+            border-bottom: 2px solid #adadad;
+            margin: 30px;
+            padding: 10px 10px;
+        }
+
+        .passForm{
+            border-bottom: 2px solid #adadad;
+            margin: 30px;
+            padding: 10px 10px;
+        }
+
+        .id {
+            width: 100%;
+            border:none;
+            outline:none;
+            color: #636e72;
+            font-size:16px;
+            height:25px;
+            background: none;
+        }
+
+        .pw {
+            width: 100%;
+            border:none;
+            outline:none;
+            color: #636e72;
+            font-size:16px;
+            height:25px;
+            background: none;
+        }
+
+        .btn {
+            position:relative;
+            left:40%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+            width:80%;
+            height:40px;
+            background: linear-gradient(125deg,rgb(3,107,63),rgb(176,205,166),rgb(3,107,63));
+            background-position: left;
+            background-size: 200%;
+            color:white;
             font-weight: bold;
-            vertical-align: top;
-            position: sticky;
-            top: 0px;
-            background-color: white;
+            border:none;
+            cursor:pointer;
+            transition: 0.4s;
+            display:inline;
         }
-        #table_01 td {
-            width: 200px;
-            height: 20px;
-            vertical-align: top;
-            background: #eee;
-            justify-items: center;
+        #pw_reset {
+            text-decoration: underline;
+            font-size: 14px;
         }
-        #dynamicTbody {
-            
-            }
-        #reserv_box {
-            width: 810px;
-            height: 628px;
-            margin-left: 200px;
-            margin-right: 200px;
-            margin-top: 50px;
-            margin-bottom: 50px;
+
+        /*
+        rgb(240,167,4)
+        */
+
+        .btn:hover {
+            background-position: right;
         }
-        #reserv_content_box {
-            width: 50%; /*405px*/
-            height: 100%; /*628px*/
-            float: left;
-        }
-        #reserv_content_box2 {
-            width: 25%; /*202.5px*/
-            height: 100%; /*628px*/
-            float: left;
-        }
-        #reserv_content {
-            width:100%;
-            height: 60px;
-            font-size: 20px;
-        }
-        #reserv_content input, #reserv_content select {
-            width: 200px;
-            height: 30px;
-            font-size: 20px;
-        }
-        #reserv_content button {
-            width: 100px;
-            height: 30px;
-            font-size: 20px;
-            margin-left: 90px;
+
+        .bottomText {
+            text-align: center;
         }
     </style>
 </head>
@@ -252,23 +131,27 @@
             document.all.div_01.style.display="none";
             document.all.div_02.style.display="none";
             document.all.div_03.style.display="none";
+            document.all.div_04.style.display="none";
             document.all.nav_01.style.display="none";
             document.all.nav_02.style.display="none";
             document.all.nav_03.style.display="none";
+            document.all.nav_04.style.display="none";
             switch (div_name) {
                 case '1':
                     document.all.div_01.style.display="";
                     document.all.nav_01.style.display="";
                     break;
-            
                 case '2':
                     document.all.div_02.style.display="";
                     document.all.nav_02.style.display="";
                     break;
-            
                 case '3':
                     document.all.div_03.style.display="";
                     document.all.nav_03.style.display="";
+                    break;
+                case '4':
+                    document.all.div_04.style.display="";
+                    document.all.nav_04.style.display="";
                     break;
             }
         }
@@ -283,22 +166,30 @@
             document.all.content_02_title.style.display="none";
             document.all.content_03_title.style.display="none";
             document.all.content_04_title.style.display="none";
+            document.all.explain_01.style.display="none";
+            document.all.explain_02.style.display="none";
+            document.all.explain_03.style.display="none";
+            document.all.explain_04.style.display="none";
             switch (div_name) {
                 case '1':
                     document.all.content_01.style.display="";
                     document.all.content_01_title.style.display="";
+                    document.all.explain_01.style.display="";
                     break;
                 case '2':
                     document.all.content_02.style.display="";
                     document.all.content_02_title.style.display="";
+                    document.all.explain_02.style.display="";
                     break;
                 case '3':
                     document.all.content_03.style.display="";
                     document.all.content_03_title.style.display="";
+                    document.all.explain_03.style.display="";
                     break;
                 case '4':
                     document.all.content_04.style.display="";
                     document.all.content_04_title.style.display="";
+                    document.all.explain_04.style.display="";
                     break;
             }
         }
@@ -359,11 +250,12 @@
         </header>
         <section>
             <ul>
-                <li><img class="ku_logo" src="../img/건국대 로고1.gif" height="60px" alt="ku logo"></li>
+                <li><a href="javascript:location.reload()"><img class="ku_logo" src="../img/건국대 로고1.gif" height="60px" alt="ku logo"></a></li>
                 <li><a id='section_blank'></a></li>
-                <li><a id='item2' href="javascript:show_layer('1')">예약 내역 조회하기</a></li>
+                <li><a id='item2' href="javascript:show_layer('1')">예약조회</a></li>
                 <li><a id='item2' href="javascript:show_layer('2')">예약하기</a></li>
-                <li><a id='item2' href="javascript:show_layer('3')">엑셀 데이터 추가</a></li>
+                <li><a id='item2' href="javascript:show_layer('3')">대량등록</a></li>
+                <li><a id='item2' href="javascript:show_layer('4')">다운로드</a></li>
             </ul>
         </section>
         <nav>
@@ -393,16 +285,29 @@
             <div id=nav_02 style="display:none">
                 <div id="nav_title">
                 </div>
+                <div id="explain_00">
+                    test00_2
+                </div>
             </div>
             <div id=nav_03 style="display:none">
                 <div id="nav_title">
+                </div>
+                <div id="explain_00">
+                    test00_3
+                </div>
+            </div>
+            <div id=nav_04 style="display:none">
+                <div id="nav_title">
+                </div>
+                <div id="explain_00">
+                    test00_4
                 </div>
             </div>
         </nav>
         <aside>
             <div id=div_01>
                 <div id="title">
-                    <a id="title_Text">예약 내역 조회하기</a>
+                    <a id="title_Text">예약조회</a>
                     <div>
                         <a id="title_Text"> - </a>
                     </div>
@@ -417,6 +322,20 @@
                     </div>
                     <div id=content_04_title style="display:none">
                         <a id="title_Text">삭제된 예약 조회하기</a>
+                    </div>
+                    <div id="blank_box2">
+                    </div>
+                    <div id="explain_01">
+                        도움말1
+                    </div>
+                    <div id="explain_02" style="display:none">
+                        도움말2
+                    </div>
+                    <div id="explain_03" style="display:none">
+                        도움말3
+                    </div>
+                    <div id="explain_04" style="display:none">
+                        도움말4
                     </div>
                 </div>
                 <div id=content_01>
@@ -1057,19 +976,19 @@
                             </div>
                             <div id="reserv_content">
                                 예약 날짜 : 
-                                <input type="date">
+                                <input id="input_box" type="date">
                             </div>
                             <div id="reserv_content">
                                 시작 시간 : 
-                                <input type="time" min="08:00:00" max="22:00:00" step="1800"/>
+                                <input id="input_box" type="time" min="08:00:00" max="22:00:00" step="1800"/>
                             </div>
                             <div id="reserv_content">
                                 종료 시간 :
-                                <input type="time">
+                                <input id="input_box" type="time">
                             </div>
                             <div id="reserv_content">
                                 구분 / 건물 / 호실 : 
-                                <select>
+                                <select id="input_box">
                                     <option>선택</option>
                                     <option>실습실/수의학관/106</option>
                                     <option>실습실/수의학관/107</option>
@@ -1092,15 +1011,15 @@
                             </div>
                             <div id="reserv_content">
                                 신청자 : 
-                                <input type="text">
+                                <input id="input_box" type="text">
                             </div>
                             <div id="reserv_content">
                                 연락처 : 
-                                <input type="text">
+                                <input id="input_box" type="text">
                             </div>
                             <div id="reserv_content">
                                 목적 :
-                                <select>
+                                <select id="input_box">
                                     <option>선택</option>
                                     <option>강의</option>
                                     <option>세미나</option>
@@ -1113,7 +1032,7 @@
                             </div>
                             <div id="reserv_content">
                                 담당 교수 : 
-                                <input type="text">
+                                <input id="input_box" type="text">
                             </div>
                             <div id="reserv_content">
                             </div>
@@ -1144,7 +1063,7 @@
             </div>
             <div id=div_03 style="display:none">
                 <div id="title">
-                    <a id="title_Text">엑셀 데이터 추가</a>
+                    <a id="title_Text">대량등록</a>
                 </div>
                 <div id=content_00>
                     <div id="select_box">
@@ -1155,6 +1074,9 @@
                         </div>
                         <div id="selected_box_title2">
                             <button onclick="">데이터 넣기</button>
+                        </div>
+                        <div id="selected_box_title3">
+                            <input type="file" name="file_name" accept=".xls,.xlsx">
                         </div>
                     </div>
                     <div id="table">
@@ -1182,6 +1104,13 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+            <div id=div_04 style="display:none">
+                <div id="title">
+                    <a id="title_Text">다운로드</a>
+                </div>
+                <div id=content_00>
                 </div>
             </div>
         </aside>
