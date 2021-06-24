@@ -154,6 +154,14 @@ aside {
     top: 35%;
     width: 8%;
 }
+#selected_box_title3{
+    float: right;
+    margin-left: 20px;
+    position: relative;
+    top: 35%;
+    width: 20%;
+    border: 1px solid rgb(0, 83, 42);
+} 
 #selected_box_title2 button {
     width: 80px;
     height: 24px;
@@ -197,7 +205,7 @@ aside {
 }
 #dynamicTbody {
     
-    }
+}
 #reserv_box {
     width: 810px;
     height: 628px;
@@ -230,5 +238,8 @@ aside {
     width: 100px;
     height: 30px;
     font-size: 20px;
-    margin-left: 90px;
+    margin-left: 152.5px;
+}
+#input_box {
+    float: right;
 }
