@@ -30,11 +30,22 @@
       <button type="button" class="btn" onclick="button()">
         로그인(Login)
       </button>
+      <div>
+        <a id="pw_reset" onclick="pwReset()">
+        비밀번호 재설정
+        </a>
+      </div>
       <script>
         //onclick="signInWithEmailPassword(document.getElementById('idInput').value, document.getElementById('pwInput').value)"
       	let button = () => {
           alert('로그인 성공!')
           location.href="screen01.jsp"
+        }
+      </script>
+      <script>
+        let pwReset = () => {
+          var Reset = prompt('비밀번호 재설정\n이메일을 입력하세요');
+          alert(Reset);
         }
       </script>
     </form>
