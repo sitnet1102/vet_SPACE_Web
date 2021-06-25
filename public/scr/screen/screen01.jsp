@@ -1236,8 +1236,11 @@
                                     <th>수업명</th>
                                     <th>예약 요일</th>
                                     <th>시간</th>
+                                    <th>구분</th>
+                                    <th>건물</th>
                                     <th>호실</th>
                                     <th>담당 교수</th>
+                                    <th>성공여부</th>
                                 </tr>
                             <tbody id="dynamicTbody">
                                 <tr>
@@ -1246,8 +1249,11 @@
                                     <td>강의명</td>
                                     <td>수</td>
                                     <td>08:00~11:00</td>
+                                    <td>세미나실</td>
+                                    <td>수의학관</td>
                                     <td>523</td>
                                     <td>건수의</td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
