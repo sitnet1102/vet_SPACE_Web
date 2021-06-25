@@ -10,118 +10,265 @@
     
     <style>
         @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou');
-        *{
-            margin: 0px;
-            padding: 0px;
-            text-decoration: none;
-            font-family:sans-serif;
+        * {
+            margin:0;
+            padding:0;
+            color:#000;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            box-sizing: border-box;
         }
 
-        body {
+        .fn-font {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            outline: none;
+        }
+
+        .container {
+            width:1400px;
+            margin:0 auto;
+        }
+        header, section, nav, aside, #title {
+            border-bottom: 1px solid rgb(0, 83, 42);
+            border-top: 1px solid rgb(0, 83, 42);
+        }
+        header {
+            height:40px;
+            background-color:rgb(0, 83, 42);
+            justify-content: center;
+            align-content: center;
+        }
+
+        #item, #divor, #help {
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 25%;
+            float: right;
+        }
+
+        #help {
+            float: left;
+        }
+        #help a {
+            color: white;
+        }
+
+        #item {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        section {
+            height: 80px;
+            background-color:white;
+            display: flex;
+            align-items:flex-start;
+        }
+        nav {
+            float: left;
+            height: 848px;
+            width: 190px;
+            background-color: rgb(110, 120, 139);
+        }
+        #nav_title {
+            text-align: center;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        #nav_title_Text {
+            font-size: 18px;
+            margin-left: 20px;
+            color: white;
+        }
+        #explain_01, #explain_02, #explain_03, #explain_04, #explain_05, #explain_06, #explain_07{
+            color: white;
+            width: 100px;
+            height: 20px;
+            float: left;
+        }
+        #blank_box {
+            height: 10px;
+            width: 100%;
+        }
+        #blank_box2 {
+            height: 60px;
+            width: 200px;
+        }
+        section ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        section ul li  {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        section ul li img {
+            margin: 10px;
+        }
+        #item2 {
+            margin-top: 5px;
+            margin-left: 30px;
+            font-size: 28px;
+        }
+        #section_blank {
+            width: 280px;
+            height: 100%;
+        }
+        aside {
+            float: left;
+            background-color:white;
+            width:1210px;
+            height: 848px;
+        }
+
+        #logout {
+            color: white;
             background-color: rgb(0, 83, 42);
         }
+        #title {
+            width: 100%;
+            height: 60px;
+            background-color:rgb(236,235,227);
+            display: flex;
+            align-items: center;
+        }
+        #title_Text {
+            font-size: 28px;
+            margin-left: 20px;
+        }
 
-        h1 {
-            text-align: center;
+        #div_01, #div_02, #div_03 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #content_00, #content_01, #content_02, #content_03, #content_04 {
+            width: 100%;
+            height: 718px;
+        }
+        #select_box {
+            margin-left: 1%;
+            width: 98%;
+            height: 60px;
+            border-bottom: 1px solid rgb(0, 83, 42);
+        }
+        #selected_box_title{
+            float: left;
+            margin-left: 20px;
+            position: relative;
+            top: 35%;
+            font-size: 16px;
+        }
+        #selected_box_title input, #selected_box_title select {
+            width: 160px;
+            height: 24px;
+            font-size: 16px;
+        }
+        #selected_box_title2{
+            float: right;
+            margin-left: 20px;
+            position: relative;
+            top: 35%;
+            width: 8%;
+        }
+        #selected_box_title3{
+            float: right;
+            margin-left: 20px;
+            position: relative;
+            top: 35%;
+            width: 20%;
+            border: 1px solid rgb(0, 83, 42);
+        } 
+        #selected_box_title2 button {
+            width: 80px;
+            height: 24px;
+            font-size: 16px;
+        }
+        #table {
+            width: 1200px;
+            height: 708px;
             margin: 10px;
-            color: white;
+            border: 2px solid rgb(0, 83, 42);
+            font-size: 12px;
+            overflow-x:scroll;
+            overflow-y:scroll;
         }
-
-        h2 {
+        #table_01 {
+            border-top: none;
+            border-bottom: 1px solid rgb(0, 83, 42);
+            border-right: none;
+            border-left: none;
+            border-collapse: separate;
+            border-spacing: 1px;
             text-align: center;
-            margin: 20px;
-            color: white;
+            line-height: 1.5;
         }
-
-        #blank {
-            width: 40px;
-            height:160px;
-        }
-
-        .loginForm {
-            position:absolute;
-            width:300px;
-            height:350px;
-            padding: 30px, 20px;
-            background-color:#FFFFFF;
-            text-align:center;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            border-radius: 15px;
-        }
-
-
-        .loginForm h2{
-            text-align: center;
-            margin: 30px;
-            color:  black;
-        }
-
-        .idForm{
-            border-bottom: 2px solid #adadad;
-            margin: 30px;
-            padding: 10px 10px;
-        }
-
-        .passForm{
-            border-bottom: 2px solid #adadad;
-            margin: 30px;
-            padding: 10px 10px;
-        }
-
-        .id {
-            width: 100%;
-            border:none;
-            outline:none;
-            color: #636e72;
-            font-size:16px;
-            height:25px;
-            background: none;
-        }
-
-        .pw {
-            width: 100%;
-            border:none;
-            outline:none;
-            color: #636e72;
-            font-size:16px;
-            height:25px;
-            background: none;
-        }
-
-        .btn {
-            position:relative;
-            left:40%;
-            transform: translateX(-50%);
-            margin-bottom: 20px;
-            width:80%;
-            height:40px;
-            background: linear-gradient(125deg,rgb(3,107,63),rgb(176,205,166),rgb(3,107,63));
-            background-position: left;
-            background-size: 200%;
-            color:white;
+        #table_01 th {
+            width: 200px;
+            height: 20px;
+            border-bottom: 1px solid rgb(0, 83, 42);
             font-weight: bold;
-            border:none;
-            cursor:pointer;
-            transition: 0.4s;
-            display:inline;
+            vertical-align: top;
+            position: sticky;
+            top: 0px;
+            background-color: white;
         }
-        #pw_reset {
-            text-decoration: underline;
-            font-size: 14px;
+        #table_01 td {
+            width: 200px;
+            height: 20px;
+            vertical-align: top;
+            background: #eee;
+            justify-items: center;
         }
-
-        /*
-        rgb(240,167,4)
-        */
-
-        .btn:hover {
-            background-position: right;
+        #dynamicTbody {
+            
         }
-
-        .bottomText {
-            text-align: center;
+        #reserv_box {
+            width: 810px;
+            height: 628px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #reserv_content_box {
+            width: 50%; /*405px*/
+            height: 100%; /*628px*/
+            float: left;
+        }
+        #reserv_content_box2 {
+            width: 25%; /*202.5px*/
+            height: 100%; /*628px*/
+            float: left;
+        }
+        #reserv_content {
+            width:100%;
+            height: 60px;
+            font-size: 20px;
+        }
+        #reserv_content input, #reserv_content select {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            float: right;
+        }
+        #reserv_content button {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            margin-left: 152.5px;
         }
     </style>
 </head>
