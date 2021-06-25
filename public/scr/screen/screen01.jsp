@@ -283,22 +283,34 @@
             document.all.nav_02.style.display="none";
             document.all.nav_03.style.display="none";
             document.all.nav_04.style.display="none";
+            document.all.explain_01.style.display="none";
+            document.all.explain_02.style.display="none";
+            document.all.explain_03.style.display="none";
+            document.all.explain_04.style.display="none";
+            document.all.explain_05.style.display="none";
+            document.all.explain_06.style.display="none";
+            document.all.explain_07.style.display="none";
             switch (div_name) {
                 case '1':
+                    location.reload();
                     document.all.div_01.style.display="";
                     document.all.nav_01.style.display="";
+                    document.all.explain_01.style.display="";
                     break;
                 case '2':
                     document.all.div_02.style.display="";
                     document.all.nav_02.style.display="";
+                    document.all.explain_05.style.display="";
                     break;
                 case '3':
                     document.all.div_03.style.display="";
                     document.all.nav_03.style.display="";
+                    document.all.explain_06.style.display="";
                     break;
                 case '4':
                     document.all.div_04.style.display="";
                     document.all.nav_04.style.display="";
+                    document.all.explain_07.style.display="";
                     break;
             }
         }
@@ -317,6 +329,9 @@
             document.all.explain_02.style.display="none";
             document.all.explain_03.style.display="none";
             document.all.explain_04.style.display="none";
+            document.all.explain_05.style.display="none";
+            document.all.explain_06.style.display="none";
+            document.all.explain_07.style.display="none";
             switch (div_name) {
                 case '1':
                     document.all.content_01.style.display="";
@@ -387,6 +402,15 @@
     </script>
     <div class="container">
         <header>
+            <div id="help">
+                <a id="explain_01"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_02" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_03" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_04" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_05" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_06" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain_07" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+            </div>
             <div id='item'>
                 <a id='logout' href="screen00.jsp">
                     로그아웃
@@ -432,22 +456,13 @@
             <div id=nav_02 style="display:none">
                 <div id="nav_title">
                 </div>
-                <div id="explain_00">
-                    test00_2
-                </div>
             </div>
             <div id=nav_03 style="display:none">
                 <div id="nav_title">
                 </div>
-                <div id="explain_00">
-                    test00_3
-                </div>
             </div>
             <div id=nav_04 style="display:none">
                 <div id="nav_title">
-                </div>
-                <div id="explain_00">
-                    test00_4
                 </div>
             </div>
         </nav>
@@ -469,20 +484,6 @@
                     </div>
                     <div id=content_04_title style="display:none">
                         <a id="title_Text">삭제된 예약 조회하기</a>
-                    </div>
-                    <div id="blank_box2">
-                    </div>
-                    <div id="explain_01">
-                        도움말1
-                    </div>
-                    <div id="explain_02" style="display:none">
-                        도움말2
-                    </div>
-                    <div id="explain_03" style="display:none">
-                        도움말3
-                    </div>
-                    <div id="explain_04" style="display:none">
-                        도움말4
                     </div>
                 </div>
                 <div id=content_01>
