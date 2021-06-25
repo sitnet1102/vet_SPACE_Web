@@ -1124,19 +1124,19 @@
                             </div>
                             <div id="reserv_content">
                                 예약 날짜 : 
-                                <input id="input_box" type="date">
+                                <input id="reserv_date" type="date">
                             </div>
                             <div id="reserv_content">
                                 시작 시간 : 
-                                <input id="input_box" type="time" min="08:00:00" max="22:00:00" step="1800"/>
+                                <input id="start_time" type="time" min="08:00:00" max="22:00:00" step="1800"/>
                             </div>
                             <div id="reserv_content">
                                 종료 시간 :
-                                <input id="input_box" type="time">
+                                <input id="end_time" type="time">
                             </div>
                             <div id="reserv_content">
                                 구분 / 건물 / 호실 : 
-                                <select id="input_box">
+                                <select id="room_id">
                                     <option>선택</option>
                                     <option>실습실/수의학관/106</option>
                                     <option>실습실/수의학관/107</option>
@@ -1159,15 +1159,15 @@
                             </div>
                             <div id="reserv_content">
                                 신청자 : 
-                                <input id="input_box" type="text">
+                                <input id="user_name" type="text">
                             </div>
                             <div id="reserv_content">
                                 연락처 : 
-                                <input id="input_box" type="text">
+                                <input id="phone_number" type="text">
                             </div>
                             <div id="reserv_content">
                                 목적 :
-                                <select id="input_box">
+                                <select id="purpose">
                                     <option>선택</option>
                                     <option>강의</option>
                                     <option>세미나</option>
@@ -1180,7 +1180,7 @@
                             </div>
                             <div id="reserv_content">
                                 담당 교수 : 
-                                <input id="input_box" type="text">
+                                <input id="prof_name" type="text">
                             </div>
                             <div id="reserv_content">
                             </div>
