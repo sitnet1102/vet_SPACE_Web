@@ -323,10 +323,12 @@
             document.all.div_02.style.display="none";
             document.all.div_03.style.display="none";
             document.all.div_04.style.display="none";
+            document.all.div_05.style.display="none";
             document.all.nav_01.style.display="none";
             document.all.nav_02.style.display="none";
             document.all.nav_03.style.display="none";
             document.all.nav_04.style.display="none";
+            document.all.nav_05.style.display="none";
             document.all.explain_01.style.display="none";
             document.all.explain_02.style.display="none";
             document.all.explain_03.style.display="none";
@@ -334,6 +336,7 @@
             document.all.explain_05.style.display="none";
             document.all.explain_06.style.display="none";
             document.all.explain_07.style.display="none";
+            document.all.explain_08.style.display="none";
             switch (div_name) {
                 case '1':
                     location.reload();
@@ -356,6 +359,11 @@
                     document.all.nav_04.style.display="";
                     document.all.explain_07.style.display="";
                     break;
+                case '5':
+                    document.all.div_05.style.display="";
+                    document.all.nav_05.style.display="";
+                    document.all.explain_08.style.display="";
+                    break;
             }
         }
     </script>
@@ -376,6 +384,7 @@
             document.all.explain_05.style.display="none";
             document.all.explain_06.style.display="none";
             document.all.explain_07.style.display="none";
+            document.all.explain_08.style.display="none";
             switch (div_name) {
                 case '1':
                     document.all.content_01.style.display="";
@@ -465,6 +474,7 @@
                 <li><a id='item2' href="javascript:show_layer('2')">예약하기</a></li>
                 <li><a id='item2' href="javascript:show_layer('3')">대량등록</a></li>
                 <li><a id='item2' href="javascript:show_layer('4')">다운로드</a></li>
+                <li><a id='item2' href="javascript:show_layer('5')">노션링크</a></li>
             </ul>
         </section>
         <nav>
@@ -500,6 +510,10 @@
                 </div>
             </div>
             <div id=nav_04 style="display:none">
+                <div id="nav_title">
+                </div>
+            </div>
+            <div id=nav_05 style="display:none">
                 <div id="nav_title">
                 </div>
             </div>
@@ -1311,6 +1325,12 @@
                     <a id="title_Text">다운로드</a>
                 </div>
                 <div id=content_00>
+            <div id=div_05 style="display:none">
+                <div id="title">
+                    <a id="title_Text">노션링크</a>
+                </div>
+                <div id=content_00>
+                    
                 </div>
             </div>
         </aside>
