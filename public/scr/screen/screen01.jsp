@@ -90,11 +90,13 @@
             margin-left: 20px;
             color: white;
         }
-        #explain_01, #explain_02, #explain_03, #explain_04, #explain_05, #explain_06, #explain_07{
+        #explain {
             color: white;
             width: 100px;
             height: 20px;
             float: left;
+        }
+        #explain_01, #explain_02, #explain_03, #explain_04, #explain_05, #explain_06, #explain_07{
         }
         #blank_box {
             height: 10px;
@@ -123,7 +125,7 @@
             font-size: 28px;
         }
         #section_blank {
-            width: 280px;
+            width: 250px;
             height: 100%;
         }
         aside {
@@ -263,12 +265,23 @@
             height: 30px;
             font-size: 20px;
             float: right;
+            text-align: center;
         }
         #reserv_content button {
             width: 100px;
             height: 30px;
             font-size: 20px;
             margin-left: 152.5px;
+        }
+        #download_box {
+            text-align: center;
+            vertical-align: center;
+            width: 100%;
+            height: 50px;
+            margin-top: 60px;
+        }
+        #download_box a {
+            font-size: 30px;
         }
     </style>
 </head>
