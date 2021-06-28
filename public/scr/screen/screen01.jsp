@@ -283,6 +283,37 @@
         #download_box a {
             font-size: 30px;
         }
+
+
+        /**/
+        .modal-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-box {
+            background: white;
+            width: 600px;
+            height: 600px;
+            border-radius: 10px;
+        }
+        .modal-title{
+            text-align: center;
+        }
+        .modal-content {
+            margin-left: 50px;
+        }
+        .modal-close-box {
+            text-align: right;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -416,13 +447,7 @@
     <div class="container">
         <header>
             <div id="help">
-                <a id="explain_01"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_02" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_03" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_04" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_05" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_06" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
-                <a id="explain_07" style="display:none"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
+                <a id="explain"><i class="fas fa-exclamation-circle" style="color:white"></i> 도움말</a>
             </div>
             <div id='item'>
                 <a id='logout' href="screen00.jsp">
@@ -1290,6 +1315,236 @@
             </div>
         </aside>
     </div>
+    <div class="modal-wrapper">
+        <div class="modal-box">
+            <div id="explain_01">
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">예약조회 - 전체 예약 조회하기</h3>
+                <br>
+                <br>
+                <p class="modal-content">전체 예약 조회하기는 등록되어 있는 모든 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">(단, 삭제된 데이터는 조회되지 않습니다.)</p>
+                <br>
+                <p class="modal-content">시작일자, 종료일자는 모든 기간 선택이 가능합니다. </p>
+                <br>
+                <p class="modal-content">(단, 시작일자가 종료일자보다 빠를때만 가능, 기간은 반드시 설정필요)</p>
+                <br>
+                <p class="modal-content">호실은 선택하지 않으면 전체 호실의 예약 정보를 확인할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">조회하기 버튼을 눌러 원하는 조건의 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">테이블 헤더의 체크박스를 선택하면 전체 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">테이블 전체영역을 복사 붙혀넣기를 통해 엑셀에 붙혀넣을 수 있습니다.</p>
+                <br>
+            </div>
+            <div id="explain_02" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">예약조회 - 대기 예약 조회하기</h3>
+                <br>
+                <br>
+                <p class="modal-content">대기 예약 조회히기는 오늘 이후의 모든 대기중인 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">(단, 삭제된 데이터는 조회되지 않습니다.)</p>
+                <br>
+                <p class="modal-content">시작일자, 종료일자는 오늘 일자부터 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">(단, 시작일자가 종료일자보다 빠를때만 가능, 기간은 반드시 설정필요)</p>
+                <br>
+                <p class="modal-content">호실은 선택하지 않으면 전체 호실의 예약 정보를 확인할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">원하는 조건을 선택하여 조회하기 버튼을 눌러 대기중인 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">좌측의 선택 박스에 원하는 예약을 선택후 예약거절 또는 예약승인 </p>
+                <br>
+                <p class="modal-content">버튼을 눌러 예약 상태를 변경할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">테이블 헤더의 체크박스를 선택하면 전체 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">테이블 전체영역을 복사 붙혀넣기를 통해 엑셀에 붙혀넣을 수 있습니다.</p>
+                <br>
+            </div>
+            <div id="explain_03" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">예약조회 - 지난 예약 조회하기</h3>
+                <br>
+                <br>
+                <p class="modal-content">지난 예약 조회히기는 오늘 이전의 모든 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">(단, 삭제된 데이터는 조회되지 않습니다.)</p>
+                <br>
+                <p class="modal-content">시작일자, 종료일자는 어제 일자까지 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">(단, 시작일자가 종료일자보다 빠를때만 가능, 기간은 반드시 설정필요)</p>
+                <br>
+                <p class="modal-content">호실은 선택하지 않으면 전체 호실의 예약 정보를 확인할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">원하는 조건을 선택하여 조회하기 버튼을 눌러 지난 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">테이블 헤더의 체크박스를 선택하면 전체 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">테이블 전체영역을 복사 붙혀넣기를 통해 엑셀에 붙혀넣을 수 있습니다.</p>
+                <br>
+            </div>
+            <div id="explain_04" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">예약조회 - 삭제된 예약 조회하기</h3>
+                <br>
+                <br>
+                <p class="modal-content">삭제된 예약 조회히기는 모든 삭제된 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">시작일자, 종료일자는 모든 기간 선택이 가능합니다. </p>
+                <br>
+                <p class="modal-content">(단, 시작일자가 종료일자보다 빠를때만 가능, 기간은 반드시 설정필요)</p>
+                <br>
+                <p class="modal-content">호실은 선택하지 않으면 전체 호실의 예약 정보를 확인할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">원하는 조건을 선택하여 조회하기 버튼을 눌러 삭제된 예약을 조회할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">테이블 헤더의 체크박스를 선택하면 전체 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">테이블 전체영역을 복사 붙혀넣기를 통해 엑셀에 붙혀넣을 수 있습니다.</p>
+                <br>
+            </div>
+            <div id="explain_05" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">예약하기</h3>
+                <br>
+                <br>
+                <p class="modal-content">예약하기는 새로운 예약을 생성할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">(단, 중복되는 날짜, 시간, 호실에 예약이 있으면 예약이 불가능합니다.)</p>
+                <br>
+                <p class="modal-content">예약 날짜는 오늘 날짜 이후부터 가능합니다.</p>
+                <br>
+                <p class="modal-content">시작 시간과 종료 시간은 30분 단위이며, 08:00 부터 22:00 까지 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">(단, 시작 시간은 종료 시간보다 빠를때만 가능)</p>
+                <br>
+                <p class="modal-content">구분/건물/호실 은 선택사항에 있는 것만 사용이 가능합니다.</p>
+                <br>
+                <p class="modal-content">신청자는 10자 이하입니다. 원하는 정보를 입력할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">연락처는 숫자 11자리 입니다.</p>
+                <br>
+                <p class="modal-content">목적은 직접입력을 선택하여 원하는 정보를 입력할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">담당교수는 10자 이하입니다. 원하는 정보를 입력할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">예약하기 버튼을 눌렀을 때 오류를 출력하면 예약이 정상적으로 처리되지 않습니다.</p>
+                <br>
+                <p class="modal-content">예약하기 버튼을 눌렀을 때 예약 완료를 출력하면 예약이 정상적으로 처리됩니다.</p>
+                <br>
+            </div>
+            <div id="explain_06" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">대량등록</h3>
+                <br>
+                <br>
+                <p class="modal-content">대량등록는 종합강의실시간표를 등록하거나, 여러 예약을 한번에 등록할 수 있습니다.</p>
+                <br>
+                <p class="modal-content">시작일자, 종료일자는 오늘 이후 날짜를 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">(단, 시작일자가 종료일자보다 빠를때만 가능, 기간은 반드시 설정필요)</p>
+                <br>
+                <p class="modal-content">선택된 기간동안 매주 해당 요일에 예약을 생성합니다. 목적은 예약에 원하는</p>
+                <br>
+                <p class="modal-content">목적을 입력할 수 있습니다. 파일 선택을 통해서 올바른 엑셀 파일을 선택하면 자동으로 </p>
+                <br>
+                <p class="modal-content">예약이 입력됩니다. 좌측의 선택 박스에 원하는 예약을 선택 후 데이터 넣기 버튼을 </p>
+                <br>
+                <p class="modal-content">누르면 해당 예약 데이터를 입력합니다. 테이블 우측의 성공여부에 성공 실패 여부를 </p>
+                <br>
+                <p class="modal-content">확인할 수 있습니다. 테이블 헤더의 체크박스를 선택하면 전체 선택이 가능합니다.</p>
+                <br>
+                <p class="modal-content">테이블 전체영역을 복사 붙혀넣기를 통해 엑셀에 붙혀넣을 수 있습니다.</p>
+                <br>
+                <p class="modal-content">수업명은 산총자 대신에 입력되어 어플에서 가장 우선적으로 확인할 수 있도록 </p>
+                <br>
+                <p class="modal-content">되어있으며, 관리자 웹 페이지를 제외하고 일반적으로 어플에서 생성되는</p>
+                <br>
+                <p class="modal-content">데이터는 신청자 이름이 들어갑니다.</p>
+                <br>
+            </div>
+            <div id="explain_07" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">다운로드</h3>
+                <br>
+                <br>
+                <p class="modal-content">다운로드는 예약조회에서 생성되는 데이터를 복사 붙혀넣기할 수 있는 엑셀 </p>
+                <br>
+                <p class="modal-content">파일과 대량등록에서 사용되는 올바른 엑셀 파일을 다운로드 할 수 있습니다.</p>
+                <br>
+            </div>
+            <div id="explain_08" style="display:none"> 
+                <br>
+                <div class="modal-close-box">
+                    <button id="modal-close-btn">닫기</button>
+                </div>
+                <h2 class="modal-title">도움말</h2>
+                <br>
+                <h3 class="modal-title">노션링크</h3>
+                <br>
+                <br>
+                <p class="modal-content">노션링크는 어플 메뉴의 공지사항, 자주 묻는 질문, 도움말에 연결되는 </p>
+                <br>
+                <p class="modal-content">노션 링크입니다.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modalOpenBtn = document.getElementById("explain");
+        const modalWrapper = document.querySelector(".modal-wrapper");
+        const modalBox = document.querySelector(".modal-box");
+
+        modalOpenBtn.addEventListener("click", () => {
+            modalWrapper.style.display = "flex";
+        });
+
+        modalWrapper.addEventListener("click", e => {
+            modalWrapper.style.display = "none";
+        })
+
+        modalBox.addEventListener("click", e => {
+        })
+    </script>
 </body>
 <script>
     includeHTML();
