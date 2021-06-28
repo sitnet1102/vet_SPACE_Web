@@ -574,7 +574,6 @@
                                 <option>전체</option>
                                 <option>대기중</option>
                                 <option>승인됨</option>
-                                <option>삭제됨</option>
                             </select>
                         </div>
                         <div id="selected_box_title2">
@@ -601,8 +600,6 @@
                                     <th>신청일자</th>
                                     <th>승인자</th>
                                     <th>승인일자</th>
-                                    <th>삭제자</th>
-                                    <th>삭제일자</th>
                                 </tr>
                             <tbody id="dynamicTbody">
                                 <tr>
@@ -617,70 +614,68 @@
                                     <td>홍길동</td>
                                     <td>01012341234</td>
                                     <td>연구보고</td>
-                                    <td>sitnet1102@konkuk.ac.kr</td>
+                                    <td>veterinary@konkuk.ac.kr</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:25:16</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:34:56</td>
-                                    <td>건수의</td>
-                                    <td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>2</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>2</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>4</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>4</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_01" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_01" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -758,126 +753,126 @@
                                     <td>홍길동</td>
                                     <td>01012341234</td>
                                     <td>연구보고</td>
-                                    <td>sitnet1102@konkuk.ac.kr</td>
+                                    <td>veterinary@konkuk.ac.kr</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>2</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>2</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>4</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>4</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>21</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>21</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>22</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>22</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>23</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>23</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>24</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>24</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>25</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>25</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>26</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>26</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>27</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>27</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>28</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>28</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>29</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>29</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>30</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>30</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>31</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>31</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>32</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>32</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>33</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>33</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>34</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>34</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>35</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>35</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>36</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>36</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>37</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>37</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>38</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>38</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>39</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>39</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_02" type="checkbox"></td><td>40</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
+                                    <td><input name="sel_02" type="checkbox"></td><td>40</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -886,7 +881,7 @@
                 <div id=content_03 style="display:none">
                     <div id="select_box">
                         <div id="selected_box_title">
-                            기간(오늘까지) : 
+                            기간(어제까지) : 
                             시작일자 <input type="date">
                             종료일자 <input type="date">
                         </div>
@@ -919,7 +914,6 @@
                                 <option>전체</option>
                                 <option>대기중</option>
                                 <option>승인됨</option>
-                                <option>삭제됨</option>
                             </select>
                         </div>
                         <div id="selected_box_title2">
@@ -946,8 +940,6 @@
                                     <th>신청일자</th>
                                     <th>승인자</th>
                                     <th>승인일자</th>
-                                    <th>삭제자</th>
-                                    <th>삭제일자</th>
                                 </tr>
                             <tbody id="dynamicTbody">
                                 <tr>
@@ -962,70 +954,68 @@
                                     <td>홍길동</td>
                                     <td>01012341234</td>
                                     <td>연구보고</td>
-                                    <td>sitnet1102@konkuk.ac.kr</td>
+                                    <td>veterinary@konkuk.ac.kr</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:25:16</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:34:56</td>
-                                    <td>건수의</td>
-                                    <td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>2</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>2</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>3</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>4</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>4</td><td>승인됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>5</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>6</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>7</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>8</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>9</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>10</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>11</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>12</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>13</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>14</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>15</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>16</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>17</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>18</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>19</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_03" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_03" type="checkbox"></td><td>20</td><td>대기중</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1101,7 +1091,7 @@
                                     <td>홍길동</td>
                                     <td>01012341234</td>
                                     <td>연구보고</td>
-                                    <td>sitnet1102@konkuk.ac.kr</td>
+                                    <td>veterinary@konkuk.ac.kr</td>
                                     <td>건수의</td>
                                     <td>2021-02-01 12:25:16</td>
                                     <td>건수의</td>
@@ -1110,61 +1100,61 @@
                                     <td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>2</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>2</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>3</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>3</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>4</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>4</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>5</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>5</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>6</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>6</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>7</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>7</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>8</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>8</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>9</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>9</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>10</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>10</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>11</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>11</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>12</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>12</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>13</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>13</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>14</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>14</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>15</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>15</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>16</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>16</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>17</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>17</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>18</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>18</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>19</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>19</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                                 <tr>
-                                    <td><input name="sel_04" type="checkbox"></td><td>20</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>sitnet1102@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
+                                    <td><input name="sel_04" type="checkbox"></td><td>20</td><td>삭제됨</td><td>2021-02-08</td><td>08:00~11:00</td><td>세미나실</td><td>수의학관</td><td>523</td><td>홍길동</td><td>01012341234</td><td>연구보고</td><td>veterinary@konkuk.ac.kr</td><td>건수의</td><td>2021-02-01 12:25:16</td><td>건수의</td><td>2021-02-01 12:34:56</td><td>건수의</td><td>2021-02-01 12:34:56</td>
                                 </tr>
                             </tbody>
                         </table>
