@@ -1280,6 +1280,10 @@
                             시작일자 <input type="date">
                             종료일자 <input type="date">
                         </div>
+                        <div id="selected_box_title">
+                            목적 : 
+                            <input type="text">
+                        </div>
                         <div id="selected_box_title2">
                             <button onclick="">데이터 넣기</button>
                         </div>
