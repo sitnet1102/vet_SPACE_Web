@@ -663,6 +663,14 @@
               }
           }
       </script>
+      <script>
+          function selectAll(selectAll)  {
+              const checkboxes = document.getElementsByName(selectAll.name);
+              checkboxes.forEach((checkbox) => {
+                  checkbox.checked = selectAll.checked;
+              })
+          }
+      </script>
       
       <div class="container">
         <header>
