@@ -570,6 +570,98 @@
       </script>
     </div>
     <div id="user_div" class="loggedin-div" style="display: none;">
+      <script type="text/javascript">
+        function show_layer(div_name) {
+            document.all.div_01.style.display="none";
+            document.all.div_02.style.display="none";
+            document.all.div_03.style.display="none";
+            document.all.div_04.style.display="none";
+            document.all.div_05.style.display="none";
+            document.all.nav_01.style.display="none";
+            document.all.nav_02.style.display="none";
+            document.all.nav_03.style.display="none";
+            document.all.nav_04.style.display="none";
+            document.all.nav_05.style.display="none";
+            document.all.explain_01.style.display="none";
+            document.all.explain_02.style.display="none";
+            document.all.explain_03.style.display="none";
+            document.all.explain_04.style.display="none";
+            document.all.explain_05.style.display="none";
+            document.all.explain_06.style.display="none";
+            document.all.explain_07.style.display="none";
+            document.all.explain_08.style.display="none";
+            switch (div_name) {
+                case '1':
+                    document.all.div_01.style.display="";
+                    document.all.nav_01.style.display="";
+                    document.all.explain_01.style.display="";
+                    break;
+                case '2':
+                    document.all.div_02.style.display="";
+                    document.all.nav_02.style.display="";
+                    document.all.explain_05.style.display="";
+                    break;
+                case '3':
+                    document.all.div_03.style.display="";
+                    document.all.nav_03.style.display="";
+                    document.all.explain_06.style.display="";
+                    break;
+                case '4':
+                    document.all.div_04.style.display="";
+                    document.all.nav_04.style.display="";
+                    document.all.explain_07.style.display="";
+                    break;
+                case '5':
+                    document.all.div_05.style.display="";
+                    document.all.nav_05.style.display="";
+                    document.all.explain_08.style.display="";
+                    break;
+            }
+        }
+      </script>
+      <script type="text/javascript">
+          function show_content(div_name) {
+              document.all.content_01.style.display="none";
+              document.all.content_02.style.display="none";
+              document.all.content_03.style.display="none";
+              document.all.content_04.style.display="none";
+              document.all.content_01_title.style.display="none";
+              document.all.content_02_title.style.display="none";
+              document.all.content_03_title.style.display="none";
+              document.all.content_04_title.style.display="none";
+              document.all.explain_01.style.display="none";
+              document.all.explain_02.style.display="none";
+              document.all.explain_03.style.display="none";
+              document.all.explain_04.style.display="none";
+              document.all.explain_05.style.display="none";
+              document.all.explain_06.style.display="none";
+              document.all.explain_07.style.display="none";
+              document.all.explain_08.style.display="none";
+              switch (div_name) {
+                  case '1':
+                      document.all.content_01.style.display="";
+                      document.all.content_01_title.style.display="";
+                      document.all.explain_01.style.display="";
+                      break;
+                  case '2':
+                      document.all.content_02.style.display="";
+                      document.all.content_02_title.style.display="";
+                      document.all.explain_02.style.display="";
+                      break;
+                  case '3':
+                      document.all.content_03.style.display="";
+                      document.all.content_03_title.style.display="";
+                      document.all.explain_03.style.display="";
+                      break;
+                  case '4':
+                      document.all.content_04.style.display="";
+                      document.all.content_04_title.style.display="";
+                      document.all.explain_04.style.display="";
+                      break;
+              }
+          }
+      </script>
+      
       <div class="container">
         <header>
             <div id="help">
@@ -584,6 +676,15 @@
             <div id='display_name'></div>
         </header>
         <section>
+            <ul>
+                <li><a href="javascript:location.reload()"><img class="ku_logo" src="src/img/건국대 로고1.gif" height="60px" alt="ku logo"></a></li>
+                <li><a id='section_blank'></a></li>
+                <li><a id='item2' href="javascript:show_layer('1')">예약조회</a></li>
+                <li><a id='item2' href="javascript:show_layer('2')">예약하기</a></li>
+                <li><a id='item2' href="javascript:show_layer('3')">대량등록</a></li>
+                <li><a id='item2' href="javascript:show_layer('4')">다운로드</a></li>
+                <li><a id='item2' href="javascript:show_layer('5')">노션링크</a></li>
+            </ul>
         </section>
         <nav>
         </nav>
