@@ -1103,6 +1103,12 @@
 				</div>
 				<div id=div_02 style="display:none">
 					<script>
+						function reservConfirmBefore() {
+							const reservConfirmValue = confirm('예약을 하시겠습니까?');
+							if(reservConfirmValue){
+								reservConfirm();
+							}
+						}
 						function reservConfirm() {
 							const apply_date = firebase.firestore.Timestamp.fromDate(new Date());
 							const reserv_date = document.getElementById('reserv_date').value;
@@ -1145,6 +1151,64 @@
 							} else if (prof_name.length > 10) {
 								alert('담당교수의 길이가 너무 깁니다.');
 							} else {
+								const stnum = (Number(st_hour) * 100 + Number(st_min));
+								const etnum = (Number(et_hour) * 100 + Number(et_min));
+								let returnValue = true;
+								fs.collection(fs_book).doc(reserv_date + " (" + dday + ")").collection('Data')
+									.where("room_id", "==", "/" + room_id).where("use_check", "==", true).get()
+									.then(querySnapshot => {
+										if (querySnapshot.empty) {
+										} else {
+											for(let i in querySnapshot.docs) {
+												const doc = querySnapshot.docs[i];
+												const s_time = doc.get('start_time');
+												const e_time = doc.get('end_time');
+												const startnum = (Number(s_time.substr(0, 2))) * 100 + (Number(s_time.substr(3)));
+												const endnum = (Number(e_time.substr(0, 2))) * 100 + (Number(e_time.substr(3)));
+												if (stnum > startnum){
+													if(stnum < endnum){
+														returnValue = false;
+														break;
+													}
+												}else{
+													if(startnum < etnum){
+														returnValue = false;
+														break;
+													}
+												}
+											}
+										}
+										if(returnValue){
+											fs.collection(fs_book).doc(reserv_date + " (" + dday + ")").collection('Data').add({
+												apply_date: apply_date,
+												start_time: st_hour+":"+st_min,
+												end_time: et_hour+":"+et_min,
+												prof_name: prof_name,
+												purpose: purpose,
+												reserv_confirm: false,
+												use_check: true,
+												room_id: "/" + room_id ,
+												stored_from: 1,
+												user_id: firebase.auth().currentUser.uid,
+												user_name: firebase.auth().currentUser.displayName,
+												phone_number: phone_number,
+											}).then(()=>{
+												alert('예약이 성공하였습니다.');
+											}).catch(e=>{
+												alert('예약하기 error',e.code);
+												console.log(e.code);
+												console.log(e.message);
+											});
+										}else{
+											alert('중복되는 예약이 있습니다.');
+										}
+									}).catch(e => {
+										alert("error" + e.code);
+										console.log(e.code);
+										console.log(e.message);
+										returnValue = false;
+										return returnValue;
+									});
 							}
 						}
 						function getDay(date) {
@@ -1152,7 +1216,6 @@
 							const dayOfWeek = week[new Date(date).getDay()];
 							return dayOfWeek;
 						}
-									}
 					</script>
 					<div class="title">
 						<a class="title_Text">예약하기</a>
@@ -1261,7 +1324,7 @@
 								<div class="reserv_content">
 								</div>
 								<div class="reserv_content">
-									<button onclick="reservConfirm()">예약하기</button>
+									<button onclick="reservConfirmBefore()">예약하기</button>
 								</div>
 							</div>
 							<div class="reserv_content_box2">
