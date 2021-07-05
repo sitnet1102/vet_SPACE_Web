@@ -1028,6 +1028,54 @@
                 </div>
             </div>
             <div id=div_02 style="display:none">
+                <script>
+                  function reservConfirm(){
+										const apply_date = firebase.firestore.Timestamp.fromDate(new Date());
+										const reserv_date = document.getElementById('reserv_date').value;
+										const dday = getDay(reserv_date);
+										const st_hour = document.getElementById('start_time_hour').value;
+										const st_min = document.getElementById('start_time_min').value;
+										const et_hour = document.getElementById('end_time_hour').value;
+										const et_min = document.getElementById('end_time_min').value;
+										const room_id = document.getElementById('room_id').value;
+										const user_name = document.getElementById('user_name').value.trim();
+										const phone_number = document.getElementById('user_name').value.trim();
+										const purpose = document.getElementById('purpose').value;
+										const prof_name = document.getElementById('prof_name').value.trim();
+										if(reserv_date === ""){
+											alert('예약 날짜를 입력해주세요');
+										}else if(st_hour === "시" || st_min === "분"){
+											alert('시작 시간을 입력해주세요');
+										}else if(et_hour === "시" || et_min === "분"){
+											alert('종료 시간을 입력해주세요');
+										}else if(et_hour === "22" || et_min === "30"){
+											alert('종료 시간은 22시까지만 가능합니다.');
+										}else if((Number(st_hour)*100 + Number(st_min)) >= (Number(et_hour)*100 + Number(et_min))) {
+											alert('시작 시간이 종료 시간보다 빠르거나 같습니다');
+										}else if(room_id === "선택"){
+											alert('구분/건물/호실 을 입력해주세요');
+										}else if(user_name === ""){
+											alert('신청자를 입력해주세요');
+										}else if(user_name.length > 10){
+											alert('신청자의 길이기 너무 깁니다. 10자 이하로 넣어주세요');
+										}else if(phone_number === ""){
+											alert('전화번호를 입력해주세요');
+										}else if(purpose === "선택"){
+											alert('목적을 입력해주세요');
+										}else if(prof_name === ""){
+											alert('담당교수를 입력해주세요');
+										}else{
+                    }
+									}
+									function getDay(date) {
+										const week = ['일', '월', '화', '수', '목', '금', '토'];
+										const dayOfWeek = week[new Date(date).getDay()];
+										return dayOfWeek;
+									}
+									function duplicateCheck(reserv_date, dday, st_hour, st_min, et_hour, et_min){
+
+									}
+                </script>
                 <div id="title">
                     <a id="title_Text">예약하기</a>
                 </div>
