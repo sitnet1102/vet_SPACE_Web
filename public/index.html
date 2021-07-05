@@ -1414,6 +1414,13 @@
       </script>
     </div>
     <script>
+			const loginDiv = document.getElementById("login_div");
+			window.addEventListener("keyup", e =>{
+				if(loginDiv.style.display === "block" && e.key === "Enter"){
+					login();
+				}
+			});
+
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
