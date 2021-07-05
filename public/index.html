@@ -1091,12 +1091,55 @@
                                 <input id="reserv_date" type="date">
                             </div>
                             <div id="reserv_content">
-                                시작 시간 : 
-                                <input id="start_time" type="time" min="08:00:00" max="22:00:00" step="1800"/>
-                            </div>
+																시작 시간 : 
+																<select id="start_time_min">
+																	<option>분</option>
+																	<option>00</option>
+																	<option>30</option>
+																</select>	
+																<select id="start_time_hour">
+																	<option>시</option>
+																	<option>08</option>
+																	<option>09</option>
+																	<option>10</option>
+																	<option>11</option>
+																	<option>12</option>
+																	<option>13</option>
+																	<option>14</option>
+																	<option>15</option>
+																	<option>16</option>
+																	<option>17</option>
+																	<option>18</option>
+																	<option>19</option>
+																	<option>20</option>
+																	<option>21</option>
+																</select>	
+														</div>
                             <div id="reserv_content">
-                                종료 시간 :
-                                <input id="end_time" type="time">
+																종료 시간 :
+																<select id="end_time_min">
+																	<option>분</option>
+																	<option>00</option>
+																	<option>30</option>
+																</select>	
+																<select id="end_time_hour">
+																	<option>시</option>
+																	<option>08</option>
+																	<option>09</option>
+																	<option>10</option>
+																	<option>11</option>
+																	<option>12</option>
+																	<option>13</option>
+																	<option>14</option>
+																	<option>15</option>
+																	<option>16</option>
+																	<option>17</option>
+																	<option>18</option>
+																	<option>19</option>
+																	<option>20</option>
+																	<option>21</option>
+																	<option>22</option>
+																</select>	
                             </div>
                             <div id="reserv_content">
                                 구분 / 건물 / 호실 : 
@@ -1149,7 +1192,7 @@
                             <div id="reserv_content">
                             </div>
                             <div id="reserv_content">
-                                <button onclick="">예약하기</button>
+                                <button onclick="reservConfirm()">예약하기</button>
                             </div>
                         </div>
                     </div>
