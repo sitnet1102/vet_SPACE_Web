@@ -1101,176 +1101,190 @@
 						</div>
 					</div>
 				</div>
-            <div id=div_02 style="display:none">
-                <script>
-                  function reservConfirm(){
-										const apply_date = firebase.firestore.Timestamp.fromDate(new Date());
-										const reserv_date = document.getElementById('reserv_date').value;
-										const dday = getDay(reserv_date);
-										const st_hour = document.getElementById('start_time_hour').value;
-										const st_min = document.getElementById('start_time_min').value;
-										const et_hour = document.getElementById('end_time_hour').value;
-										const et_min = document.getElementById('end_time_min').value;
-										const room_id = document.getElementById('room_id').value;
-										const user_name = document.getElementById('user_name').value.trim();
-										const phone_number = document.getElementById('user_name').value.trim();
-										const purpose = document.getElementById('purpose').value;
-										const prof_name = document.getElementById('prof_name').value.trim();
-										if(reserv_date === ""){
-											alert('예약 날짜를 입력해주세요');
-										}else if(st_hour === "시" || st_min === "분"){
-											alert('시작 시간을 입력해주세요');
-										}else if(et_hour === "시" || et_min === "분"){
-											alert('종료 시간을 입력해주세요');
-										}else if(et_hour === "22" || et_min === "30"){
-											alert('종료 시간은 22시까지만 가능합니다.');
-										}else if((Number(st_hour)*100 + Number(st_min)) >= (Number(et_hour)*100 + Number(et_min))) {
-											alert('시작 시간이 종료 시간보다 빠르거나 같습니다');
-										}else if(room_id === "선택"){
-											alert('구분/건물/호실 을 입력해주세요');
-										}else if(user_name === ""){
-											alert('신청자를 입력해주세요');
-										}else if(user_name.length > 10){
-											alert('신청자의 길이가 너무 깁니다. 10자 이하로 넣어주세요');
-										}else if(phone_number === ""){
-											alert('전화번호를 입력해주세요');
-										}else if(phone_number.length > 20){
-											alert('전화번호의 길이가 너무 깁니다.');
-										}else if(purpose === ""){
-											alert('목적을 입력해주세요');
-										}else if(purpose.length > 10){
-											alert('목적의 길이가 너무 깁니다.');
-										}else if(prof_name === ""){
-											alert('담당교수를 입력해주세요');
-										}else if(prof_name.length > 10){
-											alert('담당교수의 길이가 너무 깁니다.');
-										}else{
-                    }
+				<div id=div_02 style="display:none">
+					<script>
+						function reservConfirm() {
+							const apply_date = firebase.firestore.Timestamp.fromDate(new Date());
+							const reserv_date = document.getElementById('reserv_date').value;
+							const dday = getDay(reserv_date);
+							const st_hour = document.getElementById('start_time_hour').value;
+							const st_min = document.getElementById('start_time_min').value;
+							const et_hour = document.getElementById('end_time_hour').value;
+							const et_min = document.getElementById('end_time_min').value;
+							const room_id = document.getElementById('room_id').value;
+							const user_name = document.getElementById('user_name').value.trim();
+							const phone_number = document.getElementById('user_name').value.trim();
+							const purpose = document.getElementById('purpose').value;
+							const prof_name = document.getElementById('prof_name').value.trim();
+							if (reserv_date === "") {
+								alert('예약 날짜를 입력해주세요');
+							} else if (st_hour === "시" || st_min === "분") {
+								alert('시작 시간을 입력해주세요');
+							} else if (et_hour === "시" || et_min === "분") {
+								alert('종료 시간을 입력해주세요');
+							} else if (et_hour === "22" && et_min === "30") {
+								alert('종료 시간은 22시까지만 가능합니다.');
+							} else if ((Number(st_hour) * 100 + Number(st_min)) >= (Number(et_hour) * 100 + Number(et_min))) {
+								alert('시작 시간이 종료 시간보다 빠르거나 같습니다');
+							} else if (room_id === "선택") {
+								alert('구분/건물/호실 을 입력해주세요');
+							} else if (user_name === "") {
+								alert('신청자를 입력해주세요');
+							} else if (user_name.length > 10) {
+								alert('신청자의 길이가 너무 깁니다. 10자 이하로 넣어주세요');
+							} else if (phone_number === "") {
+								alert('전화번호를 입력해주세요');
+							} else if (phone_number.length > 20) {
+								alert('전화번호의 길이가 너무 깁니다.');
+							} else if (purpose === "") {
+								alert('목적을 입력해주세요');
+							} else if (purpose.length > 10) {
+								alert('목적의 길이가 너무 깁니다.');
+							} else if (prof_name === "") {
+								alert('담당교수를 입력해주세요');
+							} else if (prof_name.length > 10) {
+								alert('담당교수의 길이가 너무 깁니다.');
+							} else {
+							}
+						}
+						function getDay(date) {
+							const week = ['일', '월', '화', '수', '목', '금', '토'];
+							const dayOfWeek = week[new Date(date).getDay()];
+							return dayOfWeek;
+						}
 									}
-									function getDay(date) {
-										const week = ['일', '월', '화', '수', '목', '금', '토'];
-										const dayOfWeek = week[new Date(date).getDay()];
-										return dayOfWeek;
-									}
-									function duplicateCheck(reserv_date, dday, st_hour, st_min, et_hour, et_min){
-
-									}
-                </script>
-                <div class="title">
-                    <a class="title_Text">예약하기</a>
-                </div>
-                <div class=content_00>
-                    <div id="reserv_box">
-                        <div class="reserv_content_box2">
-                        </div>
-                        <div id="reserv_content_box">
-                            <div class="reserv_content">
-                            </div>
-                            <div title="예약 날짜" class="reserv_content">
-                                예약 날짜 : 
-                                <input id="reserv_date" type="date">
-                            </div>
-                            <div title="시작 시간 08:00~22:00" class="reserv_content">
-																시작 시간 : 
-																<select id="start_time_min">
-																	<option>분</option>
-																	<option>00</option>
-																	<option>30</option>
-																</select>	
-																<select id="start_time_hour">
-																	<option>시</option>
-																	<option>08</option>
-																	<option>09</option>
-																	<option>10</option>
-																	<option>11</option>
-																	<option>12</option>
-																	<option>13</option>
-																	<option>14</option>
-																	<option>15</option>
-																	<option>16</option>
-																	<option>17</option>
-																	<option>18</option>
-																	<option>19</option>
-																	<option>20</option>
-																	<option>21</option>
-																</select>	
-														</div>
-                            <div title="종료 시간 08:00~22:00" class="reserv_content">
-																종료 시간 :
-																<select id="end_time_min">
-																	<option>분</option>
-																	<option>00</option>
-																	<option>30</option>
-																</select>	
-																<select id="end_time_hour">
-																	<option>시</option>
-																	<option>08</option>
-																	<option>09</option>
-																	<option>10</option>
-																	<option>11</option>
-																	<option>12</option>
-																	<option>13</option>
-																	<option>14</option>
-																	<option>15</option>
-																	<option>16</option>
-																	<option>17</option>
-																	<option>18</option>
-																	<option>19</option>
-																	<option>20</option>
-																	<option>21</option>
-																	<option>22</option>
-																</select>	
-                            </div>
-                            <div title="구분/건물/호실" class="reserv_content">
-                                구분 / 건물 / 호실 : 
-                                <select id="room_id">
-                                    <option>선택</option>
-                                    <option>실습실/수의학관/106</option>
-                                    <option>실습실/수의학관/107</option>
-                                    <option>강의실/수의학관/207</option>
-                                    <option>실습실/수의학관/216</option>
-                                    <option>기타/수의학관/225</option>
-                                    <option>강의실/수의학관/306</option>
-                                    <option>강의실/수의학관/307</option>
-                                    <option>실습실/수의학관/408</option>
-                                    <option>강의실/수의학관/409</option>
-                                    <option>실습실/수의학관/410</option>
-                                    <option>세미나실/수의학관/432</option>
-                                    <option>실습실/수의학관/509</option>
-                                    <option>강의실/수의학관/510</option>
-                                    <option>강의실/수의학관/511</option>
-                                    <option>세미나실/수의학관/523</option>
-                                    <option>강의실/동물생명과학관/710-3</option>
-                                    <option>강의실/동물생명과학관/710-4</option>
-                                </select>
-                            </div>
-                            <div title="신청자는 10자 이하로 입력해주세요" class="reserv_content">
-                                신청자 : 
-                                <input id="user_name" type="text">
-                            </div>
-                            <div title="전화번호 11자리 ex)01012341234" class="reserv_content">
-                                연락처 : 
-                                <input id="phone_number" type="text">
-                            </div>
-                            <div title="목적 ex)강의, 세미나, 간담회, 연구보고, 행사 등 " class="reserv_content">
-                                목적 :
-																<input id="purpose" type="text">
-                            </div>
-                            <div title="담당 교수" class="reserv_content">
-                                담당 교수 : 
-                                <input id="prof_name" type="text">
-                            </div>
-                            <div class="reserv_content">
-                            </div>
-                            <div class="reserv_content">
-                                <button onclick="reservConfirm()">예약하기</button>
-                            </div>
-                        </div>
-                        <div class="reserv_content_box2">
-                        </div>
-                    </div>
-                </div>
-            </div>
+					</script>
+					<div class="title">
+						<a class="title_Text">예약하기</a>
+					</div>
+					<div class=content_00>
+						<div id="reserv_box">
+							<div class="reserv_content_box2">
+							</div>
+							<div id="reserv_content_box">
+								<div class="reserv_content">
+								</div>
+								<div title="예약 날짜" class="reserv_content">
+									예약 날짜 :
+									<input id="reserv_date" type="date">
+								</div>
+								<div title="시작 시간 08:00~22:00" class="reserv_content">
+									시작 시간 :
+									<select id="start_time_min">
+										<option>분</option>
+										<option>00</option>
+										<option>30</option>
+									</select>
+									<select id="start_time_hour">
+										<option>시</option>
+										<option>08</option>
+										<option>09</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+									</select>
+								</div>
+								<div title="종료 시간 08:00~22:00" class="reserv_content">
+									종료 시간 :
+									<select id="end_time_min">
+										<option>분</option>
+										<option>00</option>
+										<option>30</option>
+									</select>
+									<select id="end_time_hour">
+										<option>시</option>
+										<option>08</option>
+										<option>09</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+									</select>
+								</div>
+								<div title="구분/건물/호실" class="reserv_content">
+									구분 / 건물 / 호실 :
+									<select id="room_id">
+										<option>선택</option>
+										<option>실습실/수의학관/106</option>
+										<option>실습실/수의학관/107</option>
+										<option>강의실/수의학관/207</option>
+										<option>실습실/수의학관/216</option>
+										<option>기타/수의학관/225</option>
+										<option>강의실/수의학관/306</option>
+										<option>강의실/수의학관/307</option>
+										<option>실습실/수의학관/408</option>
+										<option>강의실/수의학관/409</option>
+										<option>실습실/수의학관/410</option>
+										<option>세미나실/수의학관/432</option>
+										<option>실습실/수의학관/509</option>
+										<option>강의실/수의학관/510</option>
+										<option>강의실/수의학관/511</option>
+										<option>세미나실/수의학관/523</option>
+										<option>강의실/동물생명과학관/710-3</option>
+										<option>강의실/동물생명과학관/710-4</option>
+									</select>
+								</div>
+								<div title="신청자는 10자 이하로 입력해주세요" class="reserv_content">
+									신청자 :
+									<input id="user_name" type="text">
+								</div>
+								<div title="전화번호 11자리 ex)01012341234" class="reserv_content">
+									연락처 :
+									<input id="phone_number" type="text">
+								</div>
+								<div title="목적 ex)강의, 세미나, 간담회, 연구보고, 행사 등 " class="reserv_content">
+									목적 :
+									<input id="purpose" type="text">
+								</div>
+								<div title="담당 교수" class="reserv_content">
+									담당 교수 :
+									<input id="prof_name" type="text">
+								</div>
+								<div class="reserv_content">
+								</div>
+								<div class="reserv_content">
+									<button onclick="reservConfirm()">예약하기</button>
+								</div>
+							</div>
+							<div class="reserv_content_box2">
+							</div>
+							<div style="display:none">
+								<div>
+									apply_date: 예약 당시 시간 넣어주기
+								</div>
+								<div>
+									deleted_date: 생성 당시 필요 없음
+								</div>
+								<div>
+									start_time, end_time, phone_number, prof_name, purpose, room_id, user_name: 입력으로 넣어주기
+								</div>
+								<div>
+									예약 날짜: doc 경로로 넣어주기
+								</div>
+								<div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             <div id=div_03 style="display:none">
                 <div class="title">
                     <a class="title_Text">대량등록</a>
