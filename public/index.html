@@ -1581,78 +1581,79 @@
 			}
 		</script>
 	</div>
-    <script>
-			const loginDiv = document.getElementById("login_div");
-			window.addEventListener("keyup", e =>{
-				if(loginDiv.style.display === "block" && e.key === "Enter"){
-					login();
-				}
-			});
+	<script>
+		const loginDiv = document.getElementById("login_div");
+		window.addEventListener("keyup", e => {
+			if (loginDiv.style.display === "block" && e.key === "Enter") {
+				login();
+			}
+		});
 
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-          // User is signed in.
-          fs.collection(fs_user).doc(user.uid).get().then((doc) => {
-            if(doc.exists){
-              if(doc.data().user_type === "관리자"){
-                document.getElementById("user_div").style.display = "block";
-                document.getElementById("login_div").style.display = "none";
-                
-                var user = firebase.auth().currentUser;
-                
-                if(user != null){
-                  const display_name = firebase.auth().currentUser.displayName;
-                  document.getElementById('display_name').innerHTML=display_name;
-                  alert('로그인 성공');
-                }
-              }else{
-                alert('접근 권한이 없습니다.');
-                logout();
-              }
-            }else{
-              console.log('no Data');
-            }
-          }).catch((error)=>{
-            console.log('firestore error', error);
-          })
-        } else {
-          // No user is signed in.
-          document.getElementById("user_div").style.display = "none";
-          document.getElementById("login_div").style.display = "block";
-        }
-      });
-      
-      function login(){
-        var userEmail = document.getElementById("idInput").value;
-        var userPass = document.getElementById("pwInput").value;
-        if(userEmail.trim() === ""){
-          alert('이메일을 입력하세요');
-        }else if(userPass.trim() === ""){
-          alert('비밀번호를 입력하세요');
-        }else{
-          firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
-          .then(()=>{
-  
-          }).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            if(errorCode === "auth/wrong-password"){
-              window.alert("이메일이나 비밀번호가 틀립니다.");
-            }else if(errorCode ==="auth/user-not-found"){
-              window.alert("이메일이나 비밀번호가 틀립니다.");
-            }else{
-              window.alert("Error : "+ errorCode +" "+ errorMessage);
-            }
-          });
-        }
-      }
-      
-      function logout(){
-        firebase.auth().signOut().then(()=>{
-          alert('로그아웃 되었습니다');
-        });
-      }
-    </script>
-  </body>
+		firebase.auth().onAuthStateChanged(function (user) {
+			if (user) {
+				// User is signed in.
+				fs.collection(fs_user).doc(user.uid).get().then((doc) => {
+					if (doc.exists) {
+						if (doc.data().user_type === "관리자") {
+							document.getElementById("user_div").style.display = "block";
+							document.getElementById("login_div").style.display = "none";
+
+							var user = firebase.auth().currentUser;
+
+							if (user != null) {
+								const display_name = firebase.auth().currentUser.displayName;
+								document.getElementById('display_name').innerHTML = display_name;
+								alert('로그인 성공');
+							}
+						} else {
+							alert('접근 권한이 없습니다.');
+							logout();
+						}
+					} else {
+						console.log('no Data');
+					}
+				}).catch((error) => {
+					console.log('firestore error', error);
+				})
+			} else {
+				// No user is signed in.
+				document.getElementById("user_div").style.display = "none";
+				document.getElementById("login_div").style.display = "block";
+			}
+		});
+
+		function login() {
+			var userEmail = document.getElementById("idInput").value;
+			var userPass = document.getElementById("pwInput").value;
+			if (userEmail.trim() === "") {
+				alert('이메일을 입력하세요');
+			} else if (userPass.trim() === "") {
+				alert('비밀번호를 입력하세요');
+			} else {
+				firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
+					.then(() => {
+
+					}).catch(function (error) {
+						// Handle Errors here.
+						var errorCode = error.code;
+						var errorMessage = error.message;
+						if (errorCode === "auth/wrong-password") {
+							window.alert("이메일이나 비밀번호가 틀립니다.");
+						} else if (errorCode === "auth/user-not-found") {
+							window.alert("이메일이나 비밀번호가 틀립니다.");
+						} else {
+							window.alert("Error : " + errorCode + " " + errorMessage);
+						}
+					});
+			}
+		}
+
+		function logout() {
+			firebase.auth().signOut().then(() => {
+				alert('로그아웃 되었습니다');
+			});
+		}
+	</script>
+</body>
+
 </html>
