@@ -1556,30 +1556,30 @@
 				</div>
 			</div>
 		</div>
-      <script>
-          const modalOpenBtn = document.getElementById("explain");
-          const modalWrapper = document.querySelector(".modal-wrapper");
-          const modalBox = document.querySelector(".modal-box");
+		<script>
+			const modalOpenBtn = document.getElementById("explain");
+			const modalWrapper = document.querySelector(".modal-wrapper");
+			const modalBox = document.querySelector(".modal-box");
 
-          modalOpenBtn.addEventListener("click", () => {
-            modalWrapper.style.display = "flex";
-          });
-					
-          modalWrapper.addEventListener("click", e => {
-						//modalWrapper.style.display = "none";
-          });
-					
-          modalBox.addEventListener("click", e => {
-					});
-          window.addEventListener("keyup", e =>{
-						if(modalWrapper.style.display === "flex" && e.key === "Escape"){
-							modalWrapper.style.display = "none";
-            }
-					});
-					function closeButton(){
-						modalWrapper.style.display = "none";
-					}
-      </script>
+			modalOpenBtn.addEventListener("click", () => {
+				modalWrapper.style.display = "flex";
+			});
+
+			modalWrapper.addEventListener("click", e => {
+				//modalWrapper.style.display = "none";
+			});
+
+			modalBox.addEventListener("click", e => {
+			});
+			window.addEventListener("keyup", e => {
+				if (modalWrapper.style.display === "flex" && e.key === "Escape") {
+					modalWrapper.style.display = "none";
+				}
+			});
+			function closeButton() {
+				modalWrapper.style.display = "none";
+			}
+		</script>
     </div>
     <script>
 			const loginDiv = document.getElementById("login_div");
