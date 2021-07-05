@@ -1056,13 +1056,19 @@
 										}else if(user_name === ""){
 											alert('신청자를 입력해주세요');
 										}else if(user_name.length > 10){
-											alert('신청자의 길이기 너무 깁니다. 10자 이하로 넣어주세요');
+											alert('신청자의 길이가 너무 깁니다. 10자 이하로 넣어주세요');
 										}else if(phone_number === ""){
 											alert('전화번호를 입력해주세요');
-										}else if(purpose === "선택"){
+										}else if(phone_number.length > 20){
+											alert('전화번호의 길이가 너무 깁니다.');
+										}else if(purpose === ""){
 											alert('목적을 입력해주세요');
+										}else if(purpose.length > 10){
+											alert('목적의 길이가 너무 깁니다.');
 										}else if(prof_name === ""){
 											alert('담당교수를 입력해주세요');
+										}else if(prof_name.length > 10){
+											alert('담당교수의 길이가 너무 깁니다.');
 										}else{
                     }
 									}
