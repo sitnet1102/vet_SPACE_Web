@@ -562,94 +562,94 @@
 		}
 	</style>
 </head>
-  <body width="100%" height="100%">
-    <div id="login_div" class="main-div">
-      <div id='blank'></div>
-      <h1>건국대학교 수의대</h1>
-      <h2>강의실 예약 관리자 페이지</h2>
-      <form action="loginPro.jsp" method="post" class="loginForm">
-        <h2>로그인(Login)</h2>
-        <div class="idForm">
-          <input id="idInput" name="email" type="text" class="id" placeholder="이메일(E-Mail)">
-        </div>
-        <div class="passForm">
-          <input id="pwInput" name="password" type="password" class="pw" placeholder="비밀번호(Password)">
-        </div>
-        <button type="button" class="btn" onclick="login()">
-          로그인(Login)
-        </button>
-        <div>
-          <a id="pw_reset">
-            비밀번호 재설정
-          </a>
-        </div>
-      </form>
-      <div id='blank2'></div>
-      <div class="pw_modal-wrapper">
-        <div class="pw_modal-box">
-          <br>
-          <br>
-          <p class="pw_modal-title">비밀번호를 재설정할 이메일을 입력해주새요</p>
-          <br>
-          <input id="pw_tmp" type="text">
-          <br>
-          <br>
-          <div class="pw_modal-btn-box">
-            <button id="pw_modal-confirm-btn">재설정</button>
-            <button id="pw_modal-close-btn">취소</button>
-          </div>
-          <br>
-        </div>
-      </div>
-      <script>
-        function pwReset(){
-          const email = document.getElementById("pw_tmp").value;
-          document.getElementById("pw_tmp").value = null;
-          firebase.auth().sendPasswordResetEmail(email)
-          .then(() => {
-            alert('비밀번호 재설정 이메일이 발송되었습니다.');
-          })
-          .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            if(errorCode === "auth/user-not-found"){
-              alert('존재하지 않는 이메일 입니다.');
-            }else{
-              console.log(errorCode,errorMessage);
-            }
-          });
-        }
-      </script>
-      <script>
-        const pwmodalOpenBtn = document.getElementById("pw_reset");
-        const pwmodalCloseBtn = document.getElementById("pw_modal-close-btn");
-        const pwmodalConfirmBtn = document.getElementById("pw_modal-confirm-btn");
-        const pwmodalWrapper = document.querySelector(".pw_modal-wrapper");
+<body width="100%" height="100%">
+	<div id="login_div" class="main-div">
+		<div id='blank'></div>
+		<h1>건국대학교 수의대</h1>
+		<h2>강의실 예약 관리자 페이지</h2>
+		<form action="loginPro.jsp" method="post" class="loginForm">
+			<h2>로그인(Login)</h2>
+			<div class="idForm">
+				<input id="idInput" name="email" type="text" class="id" placeholder="이메일(E-Mail)">
+			</div>
+			<div class="passForm">
+				<input id="pwInput" name="password" type="password" class="pw" placeholder="비밀번호(Password)">
+			</div>
+			<button type="button" class="btn" onclick="login()">
+				로그인(Login)
+			</button>
+			<div>
+				<a id="pw_reset">
+					비밀번호 재설정
+				</a>
+			</div>
+		</form>
+		<div id='blank2'></div>
+		<div class="pw_modal-wrapper">
+			<div class="pw_modal-box">
+				<br>
+				<br>
+				<p class="pw_modal-title">비밀번호를 재설정할 이메일을 입력해주새요</p>
+				<br>
+				<input id="pw_tmp" type="text">
+				<br>
+				<br>
+				<div class="pw_modal-btn-box">
+					<button id="pw_modal-confirm-btn">재설정</button>
+					<button id="pw_modal-close-btn">취소</button>
+				</div>
+				<br>
+			</div>
+		</div>
+		<script>
+			function pwReset() {
+				const email = document.getElementById("pw_tmp").value;
+				document.getElementById("pw_tmp").value = null;
+				firebase.auth().sendPasswordResetEmail(email)
+					.then(() => {
+						alert('비밀번호 재설정 이메일이 발송되었습니다.');
+					})
+					.catch((error) => {
+						var errorCode = error.code;
+						var errorMessage = error.message;
+						if (errorCode === "auth/user-not-found") {
+							alert('존재하지 않는 이메일 입니다.');
+						} else {
+							console.log(errorCode, errorMessage);
+						}
+					});
+			}
+		</script>
+		<script>
+			const pwmodalOpenBtn = document.getElementById("pw_reset");
+			const pwmodalCloseBtn = document.getElementById("pw_modal-close-btn");
+			const pwmodalConfirmBtn = document.getElementById("pw_modal-confirm-btn");
+			const pwmodalWrapper = document.querySelector(".pw_modal-wrapper");
 
-        pwmodalOpenBtn.addEventListener("click", () => {
-          pwmodalWrapper.style.display = "flex";
-        });
-        
-        pwmodalCloseBtn.addEventListener("click", e => {
-          document.getElementById("pw_tmp").value = null;
-          pwmodalWrapper.style.display = "none";
-        });
+			pwmodalOpenBtn.addEventListener("click", () => {
+				pwmodalWrapper.style.display = "flex";
+			});
 
-        pwmodalConfirmBtn.addEventListener("click", e => {
-          if(document.getElementById("pw_tmp").value.trim() === ""){
-            alert('이메일을 입력하세요');
-          }else if(document.getElementById("pw_tmp").value.indexOf('@') === -1){
-            alert('올바르지 않은 이메일 형식입니다.');
-          }else{
-            pwmodalWrapper.style.display = "none";
-            pwReset();
-          }
-        });
+			pwmodalCloseBtn.addEventListener("click", e => {
+				document.getElementById("pw_tmp").value = null;
+				pwmodalWrapper.style.display = "none";
+			});
 
-        pwmodalWrapper.addEventListener("click", e => {
-        });
-      </script>
-    </div>
+			pwmodalConfirmBtn.addEventListener("click", e => {
+				if (document.getElementById("pw_tmp").value.trim() === "") {
+					alert('이메일을 입력하세요');
+				} else if (document.getElementById("pw_tmp").value.indexOf('@') === -1) {
+					alert('올바르지 않은 이메일 형식입니다.');
+				} else {
+					pwmodalWrapper.style.display = "none";
+					pwReset();
+				}
+			});
+
+			pwmodalWrapper.addEventListener("click", e => {
+			});
+		</script>
+	</div>
     <div id="user_div" class="loggedin-div" style="display: none;">
       <script type="text/javascript">
         function show_layer(div_name) {
