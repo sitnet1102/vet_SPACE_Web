@@ -383,9 +383,20 @@
 			font-size: 16px;
 		}
 	
-		.selected_box_title input,
+		.selected_box_title input {
+			width: 150px;
+			height: 24px;
+			font-size: 16px;
+		}
 		.selected_box_title select {
-			width: 160px;
+		}
+		.roomSel {
+			width: 200px;
+			height: 24px;
+			font-size: 14px;
+		}
+		.stateSel {
+			width: 70px;
 			height: 24px;
 			font-size: 16px;
 		}
@@ -409,7 +420,33 @@
 		.selected_box_title2 button {
 			width: 80px;
 			height: 24px;
+			background-color: white;
+			/*background-color: rgb(0, 83, 42);*/
+			/*background-color: rgb(26,110,240);*/
+			border-radius: 5px;
+		}
+		.btnText {
 			font-size: 16px;
+		}
+
+		#delBtn {
+			background-color: red;
+			border-color: red;
+			/*background-color: #FFC0CB;*/
+		}
+		.delText {
+			font-size: 16px;
+			color: white;
+			/*color: rgb(233,112,140);*/
+		}
+		#confBtn {
+			background-color: blue;
+			border-color: blue;
+		}
+		.confText {
+			font-size: 16px;
+			color: white;
+			/*color: rgb(97, 167, 221);*/
 		}
 	
 		.table {
@@ -841,45 +878,45 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간 :
-								시작일자 <input type="date">
-								종료일자 <input type="date">
+								시작일자 <input id="content01_start_date" type="date">
+								종료일자 <input id="content01_end_date" type="date">
 							</div>
 							<div class="selected_box_title">
 								호실 :
-								<select>
-									<option>전체</option>
-									<option>수의학관/106</option>
-									<option>수의학관/107</option>
-									<option>수의학관/207</option>
-									<option>수의학관/216</option>
-									<option>수의학관/225</option>
-									<option>수의학관/306</option>
-									<option>수의학관/307</option>
-									<option>수의학관/408</option>
-									<option>수의학관/409</option>
-									<option>수의학관/410</option>
-									<option>수의학관/432</option>
-									<option>수의학관/509</option>
-									<option>수의학관/510</option>
-									<option>수의학관/511</option>
-									<option>수의학관/523</option>
-									<option>동물생명과학관/710-3</option>
-									<option>동물생명과학관/710-4</option>
+								<select class="roomSel" id="content01_room_id">
+									<option>선택</option>
+									<option>실습실/수의학관/106</option>
+									<option>실습실/수의학관/107</option>
+									<option>강의실/수의학관/207</option>
+									<option>실습실/수의학관/216</option>
+									<option>기타/수의학관/225</option>
+									<option>강의실/수의학관/306</option>
+									<option>강의실/수의학관/307</option>
+									<option>실습실/수의학관/408</option>
+									<option>강의실/수의학관/409</option>
+									<option>실습실/수의학관/410</option>
+									<option>세미나실/수의학관/432</option>
+									<option>실습실/수의학관/509</option>
+									<option>강의실/수의학관/510</option>
+									<option>강의실/수의학관/511</option>
+									<option>세미나실/수의학관/523</option>
+									<option>강의실/동물생명과학관/710-3</option>
+									<option>강의실/동물생명과학관/710-4</option>
 								</select>
 							</div>
 							<div class="selected_box_title">
 								예약 상태 :
-								<select>
+								<select class="stateSel" id="content01_state">
 									<option>전체</option>
 									<option>대기중</option>
 									<option>승인됨</option>
 								</select>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">조회하기</button>
+								<button onclick=""><p class="btnText">조회하기</p></button>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">삭제하기</button>
+								<button id="delBtn" onclick=""><p class="delText">삭제하기</p></button>
 							</div>
 						</div>
 						<div class="table">
@@ -912,37 +949,37 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간(오늘부터) :
-								시작일자 <input type="date">
-								종료일자 <input type="date">
+								시작일자 <input id="content02_start_date" type="date">
+								종료일자 <input id="content02_end_date" type="date">
 							</div>
 							<div class="selected_box_title">
 								호실 :
-								<select>
-									<option>전체</option>
-									<option>수의학관/106</option>
-									<option>수의학관/107</option>
-									<option>수의학관/207</option>
-									<option>수의학관/216</option>
-									<option>수의학관/225</option>
-									<option>수의학관/306</option>
-									<option>수의학관/307</option>
-									<option>수의학관/408</option>
-									<option>수의학관/409</option>
-									<option>수의학관/410</option>
-									<option>수의학관/432</option>
-									<option>수의학관/509</option>
-									<option>수의학관/510</option>
-									<option>수의학관/511</option>
-									<option>수의학관/523</option>
-									<option>동물생명과학관/710-3</option>
-									<option>동물생명과학관/710-4</option>
+								<select class="roomSel" id="content02_room_id">
+									<option>선택</option>
+									<option>실습실/수의학관/106</option>
+									<option>실습실/수의학관/107</option>
+									<option>강의실/수의학관/207</option>
+									<option>실습실/수의학관/216</option>
+									<option>기타/수의학관/225</option>
+									<option>강의실/수의학관/306</option>
+									<option>강의실/수의학관/307</option>
+									<option>실습실/수의학관/408</option>
+									<option>강의실/수의학관/409</option>
+									<option>실습실/수의학관/410</option>
+									<option>세미나실/수의학관/432</option>
+									<option>실습실/수의학관/509</option>
+									<option>강의실/수의학관/510</option>
+									<option>강의실/수의학관/511</option>
+									<option>세미나실/수의학관/523</option>
+									<option>강의실/동물생명과학관/710-3</option>
+									<option>강의실/동물생명과학관/710-4</option>
 								</select>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">조회하기</button>
+								<button onclick=""><p class="btnText">조회하기</p></button>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">예약승인</button>
+								<button id="confBtn" onclick=""><p class="confText">예약승인</p></button>
 							</div>
 						</div>
 						<div class="table">
@@ -973,42 +1010,42 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간(어제까지) :
-								시작일자 <input type="date">
-								종료일자 <input type="date">
+								시작일자 <input id="content03_start_date" type="date">
+								종료일자 <input id="content03_end_date" type="date">
 							</div>
 							<div class="selected_box_title">
 								호실 :
-								<select>
-									<option>전체</option>
-									<option>수의학관/106</option>
-									<option>수의학관/107</option>
-									<option>수의학관/207</option>
-									<option>수의학관/216</option>
-									<option>수의학관/225</option>
-									<option>수의학관/306</option>
-									<option>수의학관/307</option>
-									<option>수의학관/408</option>
-									<option>수의학관/409</option>
-									<option>수의학관/410</option>
-									<option>수의학관/432</option>
-									<option>수의학관/509</option>
-									<option>수의학관/510</option>
-									<option>수의학관/511</option>
-									<option>수의학관/523</option>
-									<option>동물생명과학관/710-3</option>
-									<option>동물생명과학관/710-4</option>
+								<select class="roomSel" id="content03_room_id">
+									<option>선택</option>
+									<option>실습실/수의학관/106</option>
+									<option>실습실/수의학관/107</option>
+									<option>강의실/수의학관/207</option>
+									<option>실습실/수의학관/216</option>
+									<option>기타/수의학관/225</option>
+									<option>강의실/수의학관/306</option>
+									<option>강의실/수의학관/307</option>
+									<option>실습실/수의학관/408</option>
+									<option>강의실/수의학관/409</option>
+									<option>실습실/수의학관/410</option>
+									<option>세미나실/수의학관/432</option>
+									<option>실습실/수의학관/509</option>
+									<option>강의실/수의학관/510</option>
+									<option>강의실/수의학관/511</option>
+									<option>세미나실/수의학관/523</option>
+									<option>강의실/동물생명과학관/710-3</option>
+									<option>강의실/동물생명과학관/710-4</option>
 								</select>
 							</div>
 							<div class="selected_box_title">
 								예약 상태 :
-								<select>
+								<select class="stateSel" id="content03_state">
 									<option>전체</option>
 									<option>대기중</option>
 									<option>승인됨</option>
 								</select>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">조회하기</button>
+								<button onclick=""><p class="btnText">조회하기</p></button>
 							</div>
 						</div>
 						<div class="table">
@@ -1042,34 +1079,34 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간(오늘까지) :
-								시작일자 <input type="date">
-								종료일자 <input type="date">
+								시작일자 <input id="content04_start_date" type="date">
+								종료일자 <input id="content04_end_date" type="date">
 							</div>
 							<div class="selected_box_title">
 								호실 :
-								<select>
-									<option>전체</option>
-									<option>수의학관/106</option>
-									<option>수의학관/107</option>
-									<option>수의학관/207</option>
-									<option>수의학관/216</option>
-									<option>수의학관/225</option>
-									<option>수의학관/306</option>
-									<option>수의학관/307</option>
-									<option>수의학관/408</option>
-									<option>수의학관/409</option>
-									<option>수의학관/410</option>
-									<option>수의학관/432</option>
-									<option>수의학관/509</option>
-									<option>수의학관/510</option>
-									<option>수의학관/511</option>
-									<option>수의학관/523</option>
-									<option>동물생명과학관/710-3</option>
-									<option>동물생명과학관/710-4</option>
+								<select class="roomSel" id="content04_room_id">
+									<option>선택</option>
+									<option>실습실/수의학관/106</option>
+									<option>실습실/수의학관/107</option>
+									<option>강의실/수의학관/207</option>
+									<option>실습실/수의학관/216</option>
+									<option>기타/수의학관/225</option>
+									<option>강의실/수의학관/306</option>
+									<option>강의실/수의학관/307</option>
+									<option>실습실/수의학관/408</option>
+									<option>강의실/수의학관/409</option>
+									<option>실습실/수의학관/410</option>
+									<option>세미나실/수의학관/432</option>
+									<option>실습실/수의학관/509</option>
+									<option>강의실/수의학관/510</option>
+									<option>강의실/수의학관/511</option>
+									<option>세미나실/수의학관/523</option>
+									<option>강의실/동물생명과학관/710-3</option>
+									<option>강의실/동물생명과학관/710-4</option>
 								</select>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">조회하기</button>
+								<button onclick=""><p class="btnText">조회하기</p></button>
 							</div>
 						</div>
 						<div class="table">
@@ -1348,7 +1385,7 @@
 								<input type="text">
 							</div>
 							<div class="selected_box_title2">
-								<button onclick="">데이터 넣기</button>
+								<button onclick=""><p class="btnText">데이터 넣기</p></button>
 							</div>
 							<div id="selected_box_title3">
 								<input type="file" name="file_name" accept=".xls,.xlsx">
