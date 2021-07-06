@@ -1270,7 +1270,7 @@
 							const et_min = document.getElementById('end_time_min').value;
 							const room_id = document.getElementById('room_id').value;
 							const user_name = document.getElementById('user_name').value.trim();
-							const phone_number = document.getElementById('user_name').value.trim();
+							const phone_number = document.getElementById('phone_number').value.trim();
 							const purpose = document.getElementById('purpose').value;
 							const prof_name = document.getElementById('prof_name').value.trim();
 							if (reserv_date === "") {
@@ -1341,7 +1341,7 @@
 												room_id: "/" + room_id ,
 												stored_from: 1,
 												user_id: firebase.auth().currentUser.uid,
-												user_name: firebase.auth().currentUser.displayName,
+												user_name: user_name,
 												phone_number: phone_number,
 											}).then(()=>{
 												alert('예약이 성공하였습니다.');
