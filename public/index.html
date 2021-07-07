@@ -1251,7 +1251,7 @@
 								</button>
 							</div>
 							<div class="selected_box_title2">
-								<button id="confBtn" onclick=""><p class="confText">예약승인</p></button>
+								<button id="confBtn" onclick="con02confFun()"><p class="confText">예약승인</p></button>
 							</div>
 						</div>
 						<div class="table">
@@ -1276,6 +1276,36 @@
 								</tbody>
 							</table>
 						</div>
+						<script>
+							function con02confFun(){
+								const delCheck = confirm('선택하신 예약을 승인하시겠습니까?');
+								if(delCheck){
+									const my_tbody = document.getElementById('content02_tbody');
+									if(my_tbody.rows.length === 0){
+										alert('조회한 예약 정보가 없습니다.');
+									}else{
+										let i = 1;
+										while(i <= my_tbody.rows.length){
+											const checkIdName = 'con02Check'+i;
+											if(document.getElementById(checkIdName).checked === true){
+												fs.collection(fs_book).doc(con02TableData[i-1].reservDate).collection('Data').doc(con02TableData[i-1].docId).update({
+													confirm_date: firebase.firestore.Timestamp.fromDate(new Date()),
+													confirm_from: firebase.auth().currentUser.displayName,
+													reserv_confirm: true,
+												}).then(snapshot => {
+													
+												}).catch(e =>{
+													console.log("예약조회02: "+con02TableData[i-1].docId + " , " + con02TableData[i-1].reservDate);
+													console.log(e.code + ": "+e.message);
+												});
+											}
+											i++;
+										}
+										alert('선택한 예약이 승인되었습니다.');
+									}
+								}
+							};
+						</script>
 						<script>
 							let con02TableData = [];
 							function con02DateOnChagne(id, value){
