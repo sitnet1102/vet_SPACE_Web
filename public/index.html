@@ -1039,7 +1039,7 @@
 											i++;
 										}
 										alert('예약 정보를 삭제했습니다');
-										con01table_reset();
+										tableReset()
 									}
 								}
 							};
@@ -1302,6 +1302,7 @@
 											i++;
 										}
 										alert('선택한 예약이 승인되었습니다.');
+										tableReset()
 									}
 								}
 							};
@@ -1518,9 +1519,17 @@
 							</table>
 						</div>
 						<script>
+							let con03TableData = [];
 							function con03checkFun(){
 
 							}
+							function con03table_reset() {
+								const my_tbody = document.getElementById('content03_tbody');
+								while(my_tbody.rows.length > 0){
+									my_tbody.deleteRow(0);
+								}
+								con03TableData = [];
+							};
 						</script>
 					</div>
 					<div id=content_04 style="display:none">
@@ -1591,9 +1600,17 @@
 							</table>
 						</div>
 						<script>
+							let con04TableData = [];
 							function con04checkFun(){
 
 							}
+							function con04table_reset() {
+								const my_tbody = document.getElementById('content04_tbody');
+								while(my_tbody.rows.length > 0){
+									my_tbody.deleteRow(0);
+								}
+								con04TableData = [];
+							};
 						</script>
 					</div>
 					<script>
@@ -1950,6 +1967,16 @@
 							</table>
 						</div>
 					</div>
+					<script>
+						let div03TableData = [];
+						function div03table_reset() {
+							const my_tbody = document.getElementById('div03_tbody');
+							while(my_tbody.rows.length > 0){
+								my_tbody.deleteRow(0);
+							}
+							div03TableData = [];
+						};
+					</script>
 				</div>
 				<div id=div_04 style="display:none">
 					<div class="title">
@@ -1995,6 +2022,16 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					function tableReset(){
+						con01table_reset();
+						con02table_reset();
+						con03table_reset();
+						con04table_reset();
+						div03table_reset();
+						// 대량 등록 테이블도 리셋
+					};
+				</script>
 			</aside>
 		</div>
 		<div class="modal-wrapper">
