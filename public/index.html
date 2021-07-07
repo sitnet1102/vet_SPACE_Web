@@ -1027,7 +1027,7 @@
 											if(document.getElementById(checkIdName).checked === true){
 												fs.collection(fs_book).doc(con01TableData[i-1].reservDate).collection('Data').doc(con01TableData[i-1].docId).update({
 													delete_date: firebase.firestore.Timestamp.fromDate(new Date()),
-													deleted_from: firebase.auth().currentUser.uid,
+													deleted_from: firebase.auth().currentUser.displayName,
 													use_check: false,
 												}).then(snapshot => {
 													
