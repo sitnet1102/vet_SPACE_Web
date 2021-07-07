@@ -1162,21 +1162,6 @@
 									}
 								}
 							};
-							function getDateRange(startDate, endDate, listDate) {
-								var dateMove = new Date(startDate);
-								var strDate = startDate;
-								if (startDate == endDate) {
-									var strDate = dateMove.toISOString().slice(0, 10);
-									listDate.push(strDate);
-								}else {
-									while (strDate < endDate) {
-										var strDate = dateMove.toISOString().slice(0, 10);
-										listDate.push(strDate);
-										dateMove.setDate(dateMove.getDate() + 1);
-									}
-								}
-								return listDate;
-							};
 						</script>
 					</div>
 					<div id=content_02 style="display:none">
@@ -1368,6 +1353,50 @@
 							</table>
 						</div>
 					</div>
+					<script>
+						function dateTypeChange(date){
+							// 경고 ! firebase 의 timestamp 형식으로 되어 있는 데이터만 변경이 가능
+							const fsDate = date.seconds*1000;
+							let month_tmp = new Date(fsDate).getMonth()+1;
+							if(month_tmp < 10){
+								month_tmp = '0'+month_tmp;
+							}
+							let date_tmp = new Date(fsDate).getDate();
+							if(date_tmp < 10){
+								date_tmp = '0'+date_tmp;
+							}
+							let hour_tmp = new Date(fsDate).getHours();
+							if(hour_tmp < 10){
+								hour_tmp = '0'+hour_tmp;
+							}
+							let min_tmp = new Date(fsDate).getMinutes();
+							if(min_tmp < 10){
+								min_tmp = '0'+min_tmp;
+							}
+							let sec_tmp = new Date(fsDate).getSeconds();
+							if(sec_tmp < 10){
+								sec_tmp = '0'+sec_tmp;
+							}
+							let resultDate= new Date(fsDate).getFullYear()+"-"+month_tmp+"-"+date_tmp
+							+" "+hour_tmp+":"+min_tmp+":"+sec_tmp;
+							return resultDate;
+						}
+						function getDateRange(startDate, endDate, listDate) {
+							var dateMove = new Date(startDate);
+							var strDate = startDate;
+							if (startDate == endDate) {
+								var strDate = dateMove.toISOString().slice(0, 10);
+								listDate.push(strDate);
+							}else {
+								while (strDate < endDate) {
+									var strDate = dateMove.toISOString().slice(0, 10);
+									listDate.push(strDate);
+									dateMove.setDate(dateMove.getDate() + 1);
+								}
+							}
+							return listDate;
+						};
+					</script>
 				</div>
 				<div id=div_02 style="display:none">
 					<div class="title">
