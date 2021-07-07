@@ -1172,7 +1172,7 @@
 								</select>
 							</div>
 							<div class="selected_box_title2">
-								<button onclick=""><p class="btnText">조회하기</p></button>
+								<button onclick="con02checkFun()"><p class="btnText">조회하기</p></button>
 							</div>
 							<div class="selected_box_title2">
 								<button id="confBtn" onclick=""><p class="confText">예약승인</p></button>
@@ -1182,7 +1182,7 @@
 							<table class="table_01">
 								<thead>
 									<tr>
-										<th><input name="sel_02" type="checkbox" onclick="selectAll(this)"></th>
+										<th><input name="conSel02" type="checkbox" onclick="selectAll(this)"></th>
 										<th>No. </th>
 										<th>예약 상태</th>
 										<th>예약 날짜</th>
@@ -1201,6 +1201,7 @@
 							</table>
 						</div>
 						<script>
+							let con02TableData = [];
 							function con02DateOnChagne(id, value){
 								let year_today = new Date().getFullYear();
 								let month_today = new Date().getMonth()+1;
@@ -1217,6 +1218,123 @@
 									document.getElementById(id).value = undefined;
 								}
 							};
+							function con02table_reset() {
+								const my_tbody = document.getElementById('content02_tbody');
+								while(my_tbody.rows.length > 0){
+									my_tbody.deleteRow(0);
+								}
+								con02TableData = [];
+							};
+							function con02checkFun(){
+								const start_date = document.getElementById('content02_start_date').value;
+								const end_date = document.getElementById('content02_end_date').value;
+								const room_id = document.getElementById('content02_room_id').value;
+
+								// 오늘 날짜 가져오기
+								con02table_reset();
+								if(start_date === ""){
+									alert('시작 일자를 선택해주세요');
+								}else if(end_date === ""){
+									alert('종료 일자를 선택해주세요');
+								}else if(start_date > end_date){
+									alert('시작 일자가 종료 일자보다 늦습니다. 다시 선택해주세요');
+								}else{
+									let datelist = [];
+									getDateRange(start_date, end_date, datelist);
+									for(let i in datelist){
+										const dday = getDay(datelist[i]);
+										if(room_id === "전체"){
+											fs.collection(fs_book).doc(datelist[i]+" ("+dday+")").collection('Data')
+											.where("use_check", "==", true).where("reserv_confirm", "==", false).get()
+											.then(snapshot => {
+												con02qeuryFun(datelist[i]+" ("+dday+")", snapshot);
+											}).catch(e=>{
+												alert('조회하기 에러 06'+ e.code);
+												console.log(e.message);
+											});
+										}else{
+											fs.collection(fs_book).doc(datelist[i]+" ("+dday+")").collection('Data')
+											.where("use_check", "==", true).where("reserv_confirm", "==", false).where("room_id", "==", "/"+room_id).get()
+											.then(snapshot => {
+												con02qeuryFun(datelist[i]+" ("+dday+")", snapshot);
+											}).catch(e=>{
+												alert('조회하기 에러 07'+ e.code);
+												console.log(e.message);
+											});
+										}
+									}
+								}
+							};
+							function con02qeuryFun(date, snapshot){
+								if(snapshot.empty){
+								}else{
+									for(let v in snapshot.docs) {
+										const doc = snapshot.docs[v];
+										con02TableData.push({
+											docId: doc.id,
+											reservDate: date,
+										});
+										let resertData_tmp = {
+											reserv_date: date,
+											apply_date: doc.get('apply_date'),
+											delete_date: doc.get('delete_date'),
+											deleted_from: doc.get('deleted_from'),
+											end_time: doc.get('end_time'),
+											phone_number: doc.get('phone_number'),
+											prof_name: doc.get('prof_name'),
+											purpose: doc.get('purpose'),
+											reserv_confirm: doc.get('reserv_confirm'),
+											room_id: doc.get('room_id'),
+											start_time: doc.get('start_time'),
+											stored_from: doc.get('stored_from'),
+											use_check: doc.get('use_check'),
+											user_id: doc.get('user_id'),
+											user_name: doc.get('user_name'),
+											confirm_date: doc.get('confirm_date'),
+											confirm_from: doc.get('confirm_from'),
+										};
+										con02add_row(resertData_tmp);
+									}
+								}
+							};
+							function con02add_row(data) {
+								const my_tbody = document.getElementById('content02_tbody');
+								const row = my_tbody.insertRow( my_tbody.rows.length );
+								const tbrowlen = my_tbody.rows.length;
+								const cell0 = row.insertCell(0);	// 체크박스
+								const cell1 = row.insertCell(1);	// No.
+								const cell2 = row.insertCell(2);	// 예약 상태
+								const cell3 = row.insertCell(3);	// 예약 날짜
+								const cell4 = row.insertCell(4);	// 시간
+								const cell5 = row.insertCell(5);	// 구분
+								const cell6 = row.insertCell(6);	// 건물
+								const cell7 = row.insertCell(7);	// 호실
+								const cell8 = row.insertCell(8);	// 신청자
+								const cell9 = row.insertCell(9);	// 연락처
+								const cell10 = row.insertCell(10);	// 목적
+								const cell11 = row.insertCell(11);	// 담당 교수
+								const cell12 = row.insertCell(12);	// 신청일자
+
+								const locaArr = data.room_id.split('/');
+
+								cell0.innerHTML = "<input id='con02Check"+ tbrowlen + "' name='conSel02' type='checkbox'>";
+								cell1.innerHTML = tbrowlen;
+								if(data.reserv_confirm){
+									cell2.innerHTML = "승인됨";
+								}else{
+									cell2.innerHTML = "대기중";
+								}
+								cell3.innerHTML = data.reserv_date;
+								cell4.innerHTML = data.start_time + " ~ " + data.end_time;
+								cell5.innerHTML = locaArr[1];
+								cell6.innerHTML = locaArr[2];
+								cell7.innerHTML = locaArr[3];
+								cell8.innerHTML = data.user_name;
+								cell9.innerHTML = data.phone_number;
+								cell10.innerHTML = data.purpose;
+								cell11.innerHTML = data.prof_name;
+								cell12.innerHTML = dateTypeChange(data.apply_date)
+							}
 						</script>
 					</div>
 					<div id=content_03 style="display:none">
