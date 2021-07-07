@@ -963,7 +963,7 @@
 												}).then(snapshot => {
 													
 												}).catch(e =>{
-													console.log(con01TableData[i-1].docId + " , " + con01TableData[i-1].reservDate);
+													console.log("예약조회01: "+con01TableData[i-1].docId + " , " + con01TableData[i-1].reservDate);
 													console.log(e.code + ": "+e.message);
 												});
 											}
@@ -1084,34 +1084,12 @@
 								const cell14 = row.insertCell(14);	// 승인일자
 
 								const locaArr = data.room_id.split('/');
-								const apply_date_s = data.apply_date.seconds*1000;
-								let month_tmp = new Date(apply_date_s).getMonth()+1;
-								if(month_tmp < 10){
-									month_tmp = '0'+month_tmp;
-								}
-								let date_tmp = new Date(apply_date_s).getDate();
-								if(date_tmp < 10){
-									date_tmp = '0'+date_tmp;
-								}
-								let hour_tmp = new Date(apply_date_s).getHours();
-								if(hour_tmp < 10){
-									hour_tmp = '0'+hour_tmp;
-								}
-								let min_tmp = new Date(apply_date_s).getMinutes();
-								if(min_tmp < 10){
-									min_tmp = '0'+min_tmp;
-								}
-								let sec_tmp = new Date(apply_date_s).getSeconds();
-								if(sec_tmp < 10){
-									sec_tmp = '0'+sec_tmp;
-								}
-
 
 								cell0.innerHTML = "<input id='con01Check"+ tbrowlen + "' name='conSel01' type='checkbox'>";
 								cell1.innerHTML = tbrowlen;
 								if(data.reserv_confirm){
 									cell2.innerHTML = "승인됨";
-									cell13.innerHTML = data.confirm_date;
+									cell13.innerHTML = dateTypeChange(data.confirm_date);
 									cell14.innerHTML = data.confirm_from;
 								}else{
 									cell2.innerHTML = "대기중";
@@ -1127,8 +1105,7 @@
 								cell9.innerHTML = data.phone_number;
 								cell10.innerHTML = data.purpose;
 								cell11.innerHTML = data.prof_name;
-								cell12.innerHTML = new Date(apply_date_s).getFullYear()+"-"+month_tmp+"-"+date_tmp
-								+" "+hour_tmp+":"+min_tmp+":"+sec_tmp;
+								cell12.innerHTML = dateTypeChange(data.apply_date);
 							}
 							function con01qeuryFun(date, snapshot){
 								if(snapshot.empty){
