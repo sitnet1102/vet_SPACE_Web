@@ -1145,8 +1145,8 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간(오늘부터) :
-								시작일자 <input id="content02_start_date" type="date">
-								종료일자 <input id="content02_end_date" type="date">
+								시작일자 <input id="content02_start_date" type="date" onchange="con02DateOnChagne(this.id, this.value)">
+								종료일자 <input id="content02_end_date" type="date" onchange="con02DateOnChagne(this.id, this.value)">
 							</div>
 							<div class="selected_box_title">
 								호실 :
@@ -1200,6 +1200,24 @@
 								</tbody>
 							</table>
 						</div>
+						<script>
+							function con02DateOnChagne(id, value){
+								let year_today = new Date().getFullYear();
+								let month_today = new Date().getMonth()+1;
+								if(month_today < 10){
+									month_today = '0'+month_today;
+								}
+								let date_today = new Date().getDate();
+								if(date_today < 10){
+									date_today = '0'+date_today;
+								}
+								let today = year_today+"-"+month_today+"-"+date_today;
+								if(value < today){
+									alert('대기 예약은 오늘날짜 까지만 선택이 가능합니다.');
+									document.getElementById(id).value = undefined;
+								}
+							};
+						</script>
 					</div>
 					<div id=content_03 style="display:none">
 						<div class="select_box">
