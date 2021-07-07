@@ -1448,8 +1448,8 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간(어제까지) :
-								시작일자 <input id="content03_start_date" type="date">
-								종료일자 <input id="content03_end_date" type="date">
+								시작일자 <input id="content03_start_date" type="date" onchange="con03DateOnChagne(this.id, this.value)">
+								종료일자 <input id="content03_end_date" type="date" onchange="con03DateOnChagne(this.id, this.value)">
 							</div>
 							<div class="selected_box_title">
 								호실 :
@@ -1523,6 +1523,23 @@
 							function con03checkFun(){
 
 							}
+							function con03DateOnChagne(id, value){
+								let yDate = new Date(new Date().getTime()+(1000*60*60*24*-1));
+								let year_yday = new Date(yDate).getFullYear();
+								let month_yday = new Date(yDate).getMonth()+1;
+								if(month_yday < 10){
+									month_yday = '0'+month_yday;
+								}
+								let date_yday = new Date(yDate).getDate();
+								if(date_yday < 10){
+									date_yday = '0'+date_yday;
+								}
+								let yday = year_yday+"-"+month_yday+"-"+date_yday;
+								if(value > yday){
+									alert('지난 예약은 어제날짜 까지만 선택이 가능합니다.');
+									document.getElementById(id).value = yday;
+								}
+							};
 							function con03table_reset() {
 								const my_tbody = document.getElementById('content03_tbody');
 								while(my_tbody.rows.length > 0){
