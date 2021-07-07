@@ -1051,6 +1051,27 @@
 
 								const locaArr = data.room_id.split('/');
 								const apply_date_s = data.apply_date.seconds*1000;
+								let month_tmp = new Date(apply_date_s).getMonth()+1;
+								if(month_tmp < 10){
+									month_tmp = '0'+month_tmp;
+								}
+								let date_tmp = new Date(apply_date_s).getDate();
+								if(date_tmp < 10){
+									date_tmp = '0'+date_tmp;
+								}
+								let hour_tmp = new Date(apply_date_s).getHours();
+								if(hour_tmp < 10){
+									hour_tmp = '0'+hour_tmp;
+								}
+								let min_tmp = new Date(apply_date_s).getMinutes();
+								if(min_tmp < 10){
+									min_tmp = '0'+min_tmp;
+								}
+								let sec_tmp = new Date(apply_date_s).getSeconds();
+								if(sec_tmp < 10){
+									sec_tmp = '0'+sec_tmp;
+								}
+
 
 								cell0.innerHTML = "<input type='checkbox'>";
 								cell1.innerHTML = tbrowlen;
@@ -1068,8 +1089,8 @@
 								cell9.innerHTML = data.phone_number;
 								cell10.innerHTML = data.purpose;
 								cell11.innerHTML = data.prof_name;
-								cell12.innerHTML = new Date(apply_date_s).getFullYear()+"-"+new Date(apply_date_s).getMonth()+"-"+new Date(apply_date_s).getDate()
-								+" "+new Date(apply_date_s).getHours()+":"+new Date(apply_date_s).getMinutes()+":"+new Date(apply_date_s).getSeconds();
+								cell12.innerHTML = new Date(apply_date_s).getFullYear()+"-"+month_tmp+"-"+date_tmp
+								+" "+hour_tmp+":"+min_tmp+":"+sec_tmp;
 								if(data.confirm_date === undefined){
 									cell13.innerHTML = "";
 									cell14.innerHTML = "";
