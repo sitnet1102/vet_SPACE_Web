@@ -9,7 +9,12 @@
 	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
-	
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen"
+		href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css">
+	<!-- 	<link rel="stylesheet" type="text/css" media="screen" href="../jquery-ui-1.8.14/themes/base/jquery-ui.css"> -->
+				
 	<style>
 		* {
 			margin: 0px;
@@ -387,6 +392,9 @@
 			width: 150px;
 			height: 24px;
 			font-size: 16px;
+		}
+		.selected_box_title #week-picker-start, .selected_box_title #week-picker-end {
+			width: 180px;
 		}
 		.selected_box_title select {
 		}
@@ -2234,8 +2242,10 @@
 						<div class="select_box">
 							<div class="selected_box_title">
 								기간 :
-								시작일자 <input type="date">
-								종료일자 <input type="date">
+								시작일자 
+								<input type="text" id="week-picker-start">
+								종료일자 
+								<input type="text" id="week-picker-end">
 							</div>
 							<div class="selected_box_title">
 								목적 :
@@ -2277,6 +2287,94 @@
 							}
 							div03TableData = [];
 						};
+					</script>
+					<script type="text/javascript">
+						$.datepicker.setDefaults({
+							dateFormat: 'yymmdd',
+							prevText: '이전 달',
+							nextText: '다음 달',
+							monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+							showMonthAfterYear: true,
+							yearSuffix: '년'
+						});
+						$(function () {
+							var startDate;
+							var endDate;
+				
+							$('#week-picker-start').datepicker({
+								showOtherMonths: true,
+								selectOtherMonths: true,
+								selectWeek: true,
+								onSelect: function (dateText, inst) {
+									var date = $(this).datepicker('getDate');
+									startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 1);
+									endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 5);
+									var dateFormat = 'yy/mm/dd'
+									startDate = $.datepicker.formatDate(dateFormat, startDate, inst.settings);
+									endDate = $.datepicker.formatDate(dateFormat, endDate, inst.settings);
+				
+									$('#week-picker-start').val(startDate + '~' + endDate);
+				
+									setTimeout("applyWeeklyHighlight()", 100);
+								},
+								beforeShow: function () {
+									setTimeout("applyWeeklyHighlight()", 100);
+								}
+							});
+						});
+						$(function () {
+							var startDate;
+							var endDate;
+							
+							$('#week-picker-end').datepicker({
+								showOtherMonths: true,
+								selectOtherMonths: true,
+								selectWeek: true,
+								onSelect: function (dateText, inst) {
+									var date = $(this).datepicker('getDate');
+									startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 1);
+									endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 5);
+									var dateFormat = 'yy/mm/dd'
+									startDate = $.datepicker.formatDate(dateFormat, startDate, inst.settings);
+									endDate = $.datepicker.formatDate(dateFormat, endDate, inst.settings);
+				
+									$('#week-picker-end').val(startDate + '~' + endDate);
+				
+									setTimeout("applyWeeklyHighlight()", 100);
+								},
+								beforeShow: function () {
+									setTimeout("applyWeeklyHighlight()", 100);
+								}
+							});
+						});
+				
+						function applyWeeklyHighlight() {
+				
+							$('.ui-datepicker-calendar tr').each(function () {
+				
+								if ($(this).parent().get(0).tagName == 'TBODY') {
+									$(this).mouseover(function () {
+										$(this).find('a').css({
+											'background': '#ffffcc',
+											'border': '1px solid #dddddd'
+										});
+										$(this).find('a').removeClass('ui-state-default');
+										$(this).css('background', '#ffffcc');
+									});
+				
+									$(this).mouseout(function () {
+										$(this).css('background', '#ffffff');
+										$(this).find('a').css('background', '');
+										$(this).find('a').addClass('ui-state-default');
+									});
+								}
+				
+							});
+						}
 					</script>
 				</div>
 				<div id=div_04 style="display:none">
