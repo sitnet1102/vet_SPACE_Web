@@ -2249,10 +2249,10 @@
 							</div>
 							<div class="selected_box_title">
 								목적 :
-								<input type="text">
+								<input type="text" id="div03_purpose">
 							</div>
 							<div class="selected_box_title2">
-								<button onclick=""><p class="btnText">데이터 넣기</p></button>
+								<button onclick="div03dataInputfunc()"><p class="btnText">데이터 넣기</p></button>
 							</div>
 							<div id="selected_box_title3">
 								<input type="file" name="file_name" accept=".xls,.xlsx">
@@ -2262,7 +2262,7 @@
 							<table class="table_01">
 								<thead>
 									<tr style="cursor:default">
-										<th><input name="sel_05" type="checkbox" onclick="selectAll(this)"></th>
+										<th><input name="divSel03" type="checkbox" onclick="selectAll(this)"></th>
 										<th>No. </th>
 										<th>수업명</th>
 										<th>예약 요일</th>
@@ -2286,6 +2286,25 @@
 								my_tbody.deleteRow(0);
 							}
 							div03TableData = [];
+						};
+						function div03dataInputfunc() {
+							const start_week = document.getElementById('week-picker-start').value;
+							const end_week = document.getElementById('week-picker-end').value;
+							const purpose = document.getElementById('div03_purpose').value.trim();
+							const excel = document.getElementById('excel_file_input').value;
+							div03table_reset();
+							if(excel === "") {
+								alert('엑셀 파일을 넣어주세요');
+							}else if(start_week === ""){
+								alert('시작 일자를 선택해주세요');
+							}else if(end_week === ""){
+								alert('종료 일자를 선택해주세요');
+							}else if(start_week > end_week){
+								alert('시작 일자가 종료 일자보다 늦습니다. 다시 선택해주세요');
+							}else if(purpose === ""){
+								alert('목적을 입력해주세요.');
+							}else{
+							}
 						};
 					</script>
 					<script type="text/javascript">
