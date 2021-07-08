@@ -2087,7 +2087,14 @@
 								<div class="reserv_content">
 								</div>
 								<div class="reserv_content">
-									<button onclick="reservConfirmBefore()">예약하기</button>
+									<button id="div02resultBtn" onclick="reservConfirmBefore()">
+										<p class="btnText">예약하기</p>
+										<div class="btnDisable">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</button>
 								</div>
 							</div>
 							<div class="reserv_content_box2">
@@ -2208,6 +2215,15 @@
 							const dayOfWeek = week[new Date(date).getDay()];
 							return dayOfWeek;
 						}
+						var btn05 = document.querySelector("#div02resultBtn");
+						btn05.addEventListener("click", function (e) {
+							var vm = this;
+							this.setAttribute("disabled", "disabled");
+
+							setTimeout(function () {
+								vm.removeAttribute("disabled")
+							}, 500);
+						});
 					</script>
 				</div>
 				<div id=div_03 style="display:none">
