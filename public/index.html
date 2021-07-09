@@ -15,6 +15,22 @@
 		href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css"> -->
 	<link rel="stylesheet" type="text/css" media="screen" href="../jquery-ui-1.8.14/themes/base/jquery-ui.css"> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyC7HAIwRLeTTlUZifjeb5zNVjkBQ50T76w",
+			authDomain: "konkuk-vet-space.firebaseapp.com",
+			databaseURL: "https://konkuk-vet-space-default-rtdb.firebaseio.com",
+			projectId: "konkuk-vet-space",
+			storageBucket: "konkuk-vet-space.appspot.com",
+			messagingSenderId: "945278468565",
+			appId: "1:945278468565:web:f7bbe5966c6144bbc9bd5c",
+			measurementId: "G-LD0YMJTPEC"
+		};
+		firebase.initializeApp(firebaseConfig);
+		var fs = firebase.firestore();
+		const fs_user = "User_info";
+		const fs_book = "Booking_info";
+	</script>
 	<style>
 		* {
 			margin: 0px;
