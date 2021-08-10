@@ -5,7 +5,7 @@ Personal Project
 email address : sitnet1102@naver.com
 
 ## Introduction
-This is an web pages for admin who manage lecture room in COLLEGE OF VETERINARY, KONKUK UNIVERSITY.
+This is an single page web site for admin who manage lecture room in COLLEGE OF VETERINARY, KONKUK UNIVERSITY.
 
 ## Web Link
 
