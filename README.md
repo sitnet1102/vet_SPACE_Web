@@ -8,7 +8,8 @@ email address : sitnet1102@naver.com
 This is an single page web site for admin who manage lecture room in COLLEGE OF VETERINARY, KONKUK UNIVERSITY.
 
 ## Web Link
-
+https://konkuk-vet-space.firebaseapp.com/
+https://konkuk-vet-space.web.app/
 
 ## Development Environment
 > - Firebase 12.0.0
