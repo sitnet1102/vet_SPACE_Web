@@ -10,7 +10,7 @@ This is an single page web site for admin who manage lecture room in COLLEGE OF 
 ## Web Link
 https://konkuk-vet-space.firebaseapp.com/  
 
-https://konkuk-vet-space.web.app/
+https://konkuk-vet-space.web.app/  
 
 ## Development Environment
 > - Firebase 12.0.0
