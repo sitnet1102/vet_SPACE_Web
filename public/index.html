@@ -2277,7 +2277,7 @@
 								<button onclick="div03dataInputfunc()"><p id="div03Text" class="btnText">데이터 넣기</p></button>
 							</div>
 							<div id="selected_box_title3">
-								<input type="file" name="file_name" accept=".xls,.xlsx">
+								<input type="file" name="file_name" id="excel_file_input" onchange="readExcel()" accept=".xlsx">
 							</div>
 						</div>
 						<div class="table">
@@ -2301,13 +2301,17 @@
 						</div>
 					</div>
 					<script>
-						let div03TableData = [];
+						let div03TableData = new Object();
 						function div03table_reset() {
 							const my_tbody = document.getElementById('div03_tbody');
 							while(my_tbody.rows.length > 0){
 								my_tbody.deleteRow(0);
 							}
 							div03TableData = [];
+						};
+						function testfunc() {
+							const a = document.getElementById('excel_file_input').value;
+							console.log(a);
 						};
 						function div03dataInputfunc() {
 							const start_week = document.getElementById('week-picker-start').value;
@@ -2326,8 +2330,59 @@
 							}else if(purpose === ""){
 								alert('목적을 입력해주세요.');
 							}else{
+								console.log(start_week);
+								console.log(end_week);
+								console.log(purpose);
+								console.log(excel);
+								console.log(div03TableData);
 							}
 						};
+					</script>
+					<script>
+						function readExcel() {
+							let input = event.target;
+							let reader = new FileReader();
+							reader.onload = function (evt) {
+								var data = evt.target.result;
+								//var xlsx = XLSX.read(data, {type: 'binary'});
+								var arr = String.fromCharCode.apply(null, new Uint8Array(data));
+								var xlsx = XLSX.read(btoa(arr), {
+									type: 'base64'
+								});
+								result = xlsx.Strings;
+								result = {};
+								xlsx.SheetNames.forEach(function (sheetName) {
+									if(sheetName === "보기 시트"){
+										var rObjArr = XLSX.utils.sheet_to_row_object_array(xlsx.Sheets[sheetName]);
+										if (rObjArr.length > 0) {
+											result[sheetName] = rObjArr;
+										}
+										console.log(rObjArr);
+										div03TableData.push(rObjArr);
+									}
+								});
+								return result;
+								// that.b64toBlob(xlsx, "binary");
+							};
+							reader.readAsArrayBuffer(input.files[0]);
+						}
+						function readExcel01() {
+							let input = event.target;
+							let reader = new FileReader();
+							reader.onload = function () {
+								let data = reader.result;
+								let workBook = XLSX.read(data, { type: 'binary' });
+								workBook.SheetNames.forEach(function (sheetName) {
+									if(sheetName === "보기 시트"){
+										console.log('SheetName: ' + sheetName);
+										let rows = XLSX.utils.sheet_to_json(workBook.Sheets[sheetName]);
+										console.log(JSON.stringify(rows));
+									}
+								})
+							};
+							reader.readAsBinaryString(input.files[0]);
+						}
+						
 					</script>
 					<script type="text/javascript">
 						$.datepicker.setDefaults({
